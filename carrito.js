@@ -5,7 +5,7 @@
 ===================================== */
 
 const CLAVE_CARRITO = "kantubyteCarrito";
-const WHATSAPP_TIENDA = "59169718159";
+const WHATSAPP_TIENDA = "59175268691";
 
 /* ELEMENTOS HTML */
 
