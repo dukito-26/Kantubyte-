@@ -1,0 +1,451 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Otros periféricos | Kantubyte</title>
+
+    <link rel="stylesheet" href="accesorios.css">
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">
+        <img src="imagenes/logo-kantubyte-transparente.jpg"
+             alt="Kantubyte">
+    </div>
+
+    <nav class="nav">
+        <a href="inicio.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="exteriores.html">Exteriores</a>
+        <a href="interior.html">Interior</a>
+        <a href="herramientas.html">Herramientas</a>
+        <a href="carrito.html">Carrito</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <p class="etiqueta">KANTUBYTE · EXTERIORES</p>
+
+        <h1>Otros periféricos</h1>
+
+        <p>
+            Accesorios que completan tu espacio tecnológico.
+            Encuentra dispositivos para estudiar, trabajar,
+            jugar y crear.
+        </p>
+    </section>
+
+    <section class="catalogo">
+
+        <div class="barra-catalogo">
+            <input
+                type="search"
+                id="buscador"
+                placeholder="Buscar accesorio..."
+                aria-label="Buscar accesorio">
+
+            <select id="filtroNivel">
+                <option value="todos">Todos los niveles</option>
+                <option value="basica">Básica</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+                <option value="premium">Premium</option>
+            </select>
+        </div>
+
+        <p id="contador-productos">
+            15 accesorios disponibles
+        </p>
+
+        <div class="contenedor-productos">
+
+            <!-- 1. Webcam Logitech C270 -->
+            <article class="producto" data-nivel="basica">
+                <div class="imagen-producto">
+                    <img
+                        src="https://static-data.manualslib.tech/product-images/fe1/448125/logitech-c270-webcam.jpg"
+                        alt="Cámara web Logitech C270"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Básica</span>
+                <h3>Webcam Logitech C270</h3>
+                <p class="marca">Logitech · 720p HD</p>
+                <p class="descripcion">
+                    Cámara web compacta para videollamadas,
+                    clases virtuales y reuniones.
+                </p>
+                <p class="precio">Bs 510</p>
+                <button class="agregar-carrito"
+                        data-nombre="Webcam Logitech C270"
+                        data-precio="510">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 2. Micrófono Fifine K669B -->
+            <article class="producto" data-nivel="media">
+                <div class="imagen-producto">
+                    <img
+                        src="imagenes/Microfono.jpg"
+                        alt="Micrófono USB Fifine K669B con trípode"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Media</span>
+                <h3>Micrófono Fifine K669B</h3>
+                <p class="marca">Fifine · USB</p>
+                <p class="descripcion">
+                    Micrófono de escritorio para grabaciones,
+                    streaming y comunicación.
+                </p>
+                <p class="precio">Bs 350</p>
+                <button class="agregar-carrito"
+                        data-nombre="Micrófono Fifine K669B"
+                        data-precio="350">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 3. Parlantes Logitech Z120 -->
+            <article class="producto" data-nivel="basica">
+                <div class="imagen-producto">
+                    <img
+                        src="https://gitec.ge/images/thumbs/0064444_l980-000513.jpeg"
+                        alt="Parlantes Logitech Z120"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Básica</span>
+                <h3>Parlantes Logitech Z120</h3>
+                <p class="marca">Logitech · USB</p>
+                <p class="descripcion">
+                    Parlantes compactos para escuchar música,
+                    videos y contenido de estudio.
+                </p>
+                <p class="precio">Bs 190</p>
+                <button class="agregar-carrito"
+                        data-nombre="Parlantes Logitech Z120"
+                        data-precio="190">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 4. Control Logitech F310 -->
+            <article class="producto" data-nivel="media">
+                <div class="imagen-producto">
+                    <img
+                        src="https://www.proshop.nl/Images/915x900/2412669_36dd61351cb9.jpg"
+                        alt="Control Logitech F310 para PC"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Media</span>
+                <h3>Control Logitech F310</h3>
+                <p class="marca">Logitech · Gamepad</p>
+                <p class="descripcion">
+                    Control cableado para videojuegos
+                    compatibles con PC.
+                </p>
+                <p class="precio">Bs 280</p>
+                <button class="agregar-carrito"
+                        data-nombre="Control Logitech F310"
+                        data-precio="280">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 5. Mousepad Redragon P001 -->
+            <article class="producto" data-nivel="basica">
+                <div class="imagen-producto">
+                    <img
+                        src="https://www.technoo.pk/cdn/shop/products/Redragon_ARCHELON_P001_Gaming_Mouse_Pad-4_2048x2048_15612044-f970-44a9-8b69-911c4f728108_800x.webp?v=1673265802"
+                        alt="Mousepad gamer Redragon Archelon P001"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Básica</span>
+                <h3>Mousepad Redragon P001</h3>
+                <p class="marca">Redragon · Archelon</p>
+                <p class="descripcion">
+                    Superficie para mouse con base
+                    antideslizante y bordes reforzados.
+                </p>
+                <p class="precio">Bs 100</p>
+                <button class="agregar-carrito"
+                        data-nombre="Mousepad Redragon P001"
+                        data-precio="100">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 6. Hub USB UGREEN -->
+            <article class="producto" data-nivel="media">
+                <div class="imagen-producto">
+                    <img
+                        src="https://down-id.img.susercontent.com/file/sg-11134201-81zw6-miv20ty5fthda3"
+                        alt="Hub USB UGREEN de cuatro puertos"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Media</span>
+                <h3>Hub USB UGREEN</h3>
+                <p class="marca">UGREEN · 4 puertos</p>
+                <p class="descripcion">
+                    Amplía las conexiones USB disponibles
+                    en tu computadora.
+                </p>
+                <p class="precio">Bs 160</p>
+                <button class="agregar-carrito"
+                        data-nombre="Hub USB UGREEN"
+                        data-precio="160">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 7. Soporte Havit HY505 -->
+            <article class="producto" data-nivel="media">
+                <div class="imagen-producto">
+                    <img
+                        src="https://igeekjo.com/cdn/shop/files/download_1_737c587a-be4d-4ff7-bf19-fa3826188e45.png?v=1774972436&width=1000"
+                        alt="Soporte para audífonos Havit HY505"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Media</span>
+                <h3>Soporte Havit HY505</h3>
+                <p class="marca">Havit · RGB</p>
+                <p class="descripcion">
+                    Base para organizar y colocar
+                    tus audífonos de escritorio.
+                </p>
+                <p class="precio">Bs 180</p>
+                <button class="agregar-carrito"
+                        data-nombre="Soporte Havit HY505"
+                        data-precio="180">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 8. Elevador para monitor -->
+            <article class="producto" data-nivel="media">
+                <div class="imagen-producto">
+                    <img
+                        src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?w=800"
+                        alt="Monitor de escritorio como referencia visual"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Media</span>
+                <h3>Elevador para monitor</h3>
+                <p class="marca">Fellowes · Soporte de escritorio</p>
+                <p class="descripcion">
+                    Plataforma para elevar el monitor
+                    y organizar el espacio de trabajo.
+                </p>
+                <p class="precio">Bs 220</p>
+                <button class="agregar-carrito"
+                        data-nombre="Elevador para monitor"
+                        data-precio="220">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 9. Lector de tarjetas UGREEN -->
+            <article class="producto" data-nivel="basica">
+                <div class="imagen-producto">
+                    <img
+                        src="https://vantek.cl/cdn/shop/files/sin-titulo29-524a9835-69f5-4f3e-aba0-5a12e645fb9a-bf3798ac-d03a-4b1d-801d-e85add0976c7.jpg?v=1767112558"
+                        alt="Lector de tarjetas UGREEN SD y microSD"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Básica</span>
+                <h3>Lector de tarjetas UGREEN</h3>
+                <p class="marca">UGREEN · SD / TF</p>
+                <p class="descripcion">
+                    Permite conectar tarjetas de memoria
+                    para transferir archivos.
+                </p>
+                <p class="precio">Bs 90</p>
+                <button class="agregar-carrito"
+                        data-nombre="Lector de tarjetas UGREEN"
+                        data-precio="90">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 10. HyperX SoloCast -->
+            <article class="producto" data-nivel="alta">
+                <div class="imagen-producto">
+                    <img
+                        src="https://cdn.grupoelcorteingles.es/SGFM/dctm/MEDIA03/202205/11/00128655610062____15__1200x1200.jpg?height=1200&impolicy=Resize&width=1200"
+                        alt="Micrófono HyperX SoloCast"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Alta</span>
+                <h3>Micrófono HyperX SoloCast</h3>
+                <p class="marca">HyperX · USB</p>
+                <p class="descripcion">
+                    Micrófono para voz, transmisiones
+                    y grabaciones de escritorio.
+                </p>
+                <p class="precio">Bs 490</p>
+                <button class="agregar-carrito"
+                        data-nombre="Micrófono HyperX SoloCast"
+                        data-precio="490">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 11. JBL Flip 6 -->
+            <article class="producto" data-nivel="alta">
+                <div class="imagen-producto">
+                    <img
+                        src="https://cdn.shopware.store/N/R/R/AlrFq/media/28/4a/02/1772707448/e00116fd8aea4c83b7e16a629cb670ec.jpeg?ts=1772707448"
+                        alt="Parlante portátil JBL Flip 6"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Alta</span>
+                <h3>Parlante JBL Flip 6</h3>
+                <p class="marca">JBL · Bluetooth</p>
+                <p class="descripcion">
+                    Parlante portátil inalámbrico
+                    para escuchar música.
+                </p>
+                <p class="precio">Bs 950</p>
+                <button class="agregar-carrito"
+                        data-nombre="Parlante JBL Flip 6"
+                        data-precio="950">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 12. Control Xbox -->
+            <article class="producto" data-nivel="alta">
+                <div class="imagen-producto">
+                    <img
+                        src="https://lamarinamx.vtexassets.com/arquivos/ids/1473700/889842640724_3.jpg?v=638979686515700000"
+                        alt="Control inalámbrico Xbox"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Alta</span>
+                <h3>Control Xbox Wireless</h3>
+                <p class="marca">Xbox · Inalámbrico</p>
+                <p class="descripcion">
+                    Mando inalámbrico compatible
+                    con dispositivos y juegos compatibles.
+                </p>
+                <p class="precio">Bs 650</p>
+                <button class="agregar-carrito"
+                        data-nombre="Control Xbox Wireless"
+                        data-precio="650">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 13. Base refrigerante N11 -->
+            <article class="producto" data-nivel="media">
+                <div class="imagen-producto">
+                    <img
+                        src="https://garmade.com/cdn/shop/products/SYA0021987.jpg?v=1689669747"
+                        alt="Base refrigerante N11 para laptop"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Media</span>
+                <h3>Base refrigerante N11</h3>
+                <p class="marca">N11 · Ventiladores USB</p>
+                <p class="descripcion">
+                    Soporte con ventiladores para
+                    ayudar a refrigerar una laptop.
+                </p>
+                <p class="precio">Bs 240</p>
+                <button class="agregar-carrito"
+                        data-nombre="Base refrigerante N11"
+                        data-precio="240">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 14. Webcam Logitech C920 -->
+            <article class="producto" data-nivel="alta">
+                <div class="imagen-producto">
+                    <img
+                        src="https://media.stockinthechannel.com/pic/HqGcxI1tTkCTzWqCyeE4GQ.c-r.jpg"
+                        alt="Webcam Logitech C920 HD Pro"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Alta</span>
+                <h3>Webcam Logitech C920</h3>
+                <p class="marca">Logitech · Full HD</p>
+                <p class="descripcion">
+                    Cámara Full HD para videollamadas,
+                    clases y creación de contenido.
+                </p>
+                <p class="precio">Bs 780</p>
+                <button class="agregar-carrito"
+                        data-nombre="Webcam Logitech C920"
+                        data-precio="780">
+                    Agregar al carrito
+                </button>
+            </article>
+
+            <!-- 15. Brazo para micrófono -->
+            <article class="producto" data-nivel="media">
+                <div class="imagen-producto">
+                    <img
+                        src="https://i-xtech.com/cdn/shop/files/1_17.jpg?v=1719364304&width=1920"
+                        alt="Brazo articulado para micrófono"
+                        loading="lazy">
+                </div>
+
+                <span class="nivel">Media</span>
+                <h3>Brazo para micrófono</h3>
+                <p class="marca">I-XTECH · Articulado</p>
+                <p class="descripcion">
+                    Brazo ajustable con abrazadera
+                    para sujetar un micrófono al escritorio.
+                </p>
+                <p class="precio">Bs 210</p>
+                <button class="agregar-carrito"
+                        data-nombre="Brazo para micrófono"
+                        data-precio="210">
+                    Agregar al carrito
+                </button>
+            </article>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <h3>KANTUBYTE</h3>
+
+    <p>Tecnología que conecta posibilidades.</p>
+
+    <p>
+        Contactos · Soporte · Acerca de
+    </p>
+
+    <p>
+        © 2026 Kantubyte.
+    </p>
+</footer>
+
+<script src="accesorios.js"></script>
+
+</body>
+</html>

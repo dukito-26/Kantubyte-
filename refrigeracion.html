@@ -1,0 +1,396 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Refrigeración | Kantubyte</title>
+
+    <link rel="stylesheet" href="refrigeracion.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div class="marca">
+            <img
+                src="imagenes/logo-kantubyte-transparente.jpg"
+                alt="Logo Kantubyte"
+            >
+            <h1>KANTUBYTE</h1>
+        </div>
+
+        <nav class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="interiores.html">Interiores</a>
+            <a href="carrito.html">Carrito</a>
+        </nav>
+    </header>
+
+    <!-- PORTADA -->
+    <section class="portada">
+        <p class="etiqueta-portada">KANTUBYTE · INTERIORES</p>
+
+        <h2>Refrigeración</h2>
+
+        <p>
+            Mantén tu equipo fresco, estable y preparado
+            para cada desafío.
+        </p>
+    </section>
+
+    <!-- BUSCADOR -->
+    <section class="filtros">
+
+        <input
+            type="text"
+            id="buscador"
+            placeholder="Buscar refrigeración o marca..."
+            autocomplete="off"
+        >
+
+        <select id="filtro-nivel">
+            <option value="todos">Todos los niveles</option>
+            <option value="basica">Básica</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+            <option value="premium">Premium</option>
+        </select>
+
+        <p class="contador">
+            Mostrando
+            <span id="contador-productos">10</span>
+            productos
+        </p>
+
+    </section>
+
+    <!-- TARJETAS -->
+    <main class="contenedor-productos" id="contenedor-productos">
+
+        <!-- 1 DEEPCOOL AK400 -->
+        <article class="producto"
+            data-nombre="DeepCool AK400"
+            data-marca="DeepCool"
+            data-nivel="media">
+
+            <img
+                src="https://gomagcdn.ro/domains3/probitz.ro/files/product/large/cpu-cooler-deepcool-ak400-199919.jpg"
+                alt="Disipador DeepCool AK400"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">DeepCool</span>
+                <h3>AK400</h3>
+                <span class="nivel media">Media</span>
+
+                <p class="descripcion">
+                    Disipador de torre con ventilador de 120 mm.
+                </p>
+
+                <p class="precio">Bs. 390</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="DeepCool AK400"
+                    data-precio="390">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 2 CORSAIR H100 RGB -->
+        <article class="producto"
+            data-nombre="Corsair H100 RGB 240mm"
+            data-marca="Corsair"
+            data-nivel="alta">
+
+            <img
+                src="https://images5.kabum.com.br/produtos/fotos/162465/water-cooler-corsair-h100-rgb-intel-amd-240mm-2x-120mm-preto-cw-9060053-ww_1636559170_gg.jpg"
+                alt="Refrigeración líquida Corsair H100 RGB"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Corsair</span>
+                <h3>H100 RGB 240mm</h3>
+                <span class="nivel alta">Alta</span>
+
+                <p class="descripcion">
+                    Refrigeración líquida con radiador de 240 mm.
+                </p>
+
+                <p class="precio">Bs. 1.050</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Corsair H100 RGB 240mm"
+                    data-precio="1050">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 3 ARCTIC LIQUID FREEZER III -->
+        <article class="producto"
+            data-nombre="Arctic Liquid Freezer III 360"
+            data-marca="Arctic"
+            data-nivel="premium">
+
+            <img
+                src="https://gplaybg.ro/UserFiles/Product/gallery_1/liquid-freezer-iii-360-black-g01.png"
+                alt="Arctic Liquid Freezer III 360"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Arctic</span>
+                <h3>Liquid Freezer III 360</h3>
+                <span class="nivel premium">Premium</span>
+
+                <p class="descripcion">
+                    Sistema AIO de alto rendimiento con radiador de 360 mm.
+                </p>
+
+                <p class="precio">Bs. 1.650</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Arctic Liquid Freezer III 360"
+                    data-precio="1650">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 4 THERMALRIGHT PEERLESS ASSASSIN -->
+        <article class="producto"
+            data-nombre="Thermalright Peerless Assassin 120 SE"
+            data-marca="Thermalright"
+            data-nivel="alta">
+
+            <img
+                src="https://ecommerce.datablitz.com.ph/cdn/shop/files/71j6VKsz-fL._SL1500.jpg?v=1755230302"
+                alt="Disipador Thermalright Peerless Assassin"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Thermalright</span>
+                <h3>Peerless Assassin 120 SE</h3>
+                <span class="nivel alta">Alta</span>
+
+                <p class="descripcion">
+                    Disipador de doble torre con dos ventiladores.
+                </p>
+
+                <p class="precio">Bs. 650</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Thermalright Peerless Assassin 120 SE"
+                    data-precio="650">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 5 AMD WRAITH STEALTH -->
+        <article class="producto"
+            data-nombre="AMD Wraith Stealth"
+            data-marca="AMD"
+            data-nivel="basica">
+
+            <img
+                src="https://cdn.cclonline.com/cdn-cgi/image/width%3D2000/images/avante/712-000052.jpg"
+                alt="Disipador AMD Wraith Stealth"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">AMD</span>
+                <h3>Wraith Stealth</h3>
+                <span class="nivel basica">Básica</span>
+
+                <p class="descripcion">
+                    Disipador compacto para procesadores compatibles.
+                </p>
+
+                <p class="precio">Bs. 160</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="AMD Wraith Stealth"
+                    data-precio="160">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 6 COOLER MASTER CF120 ARGB -->
+        <article class="producto"
+            data-nombre="Cooler Master CF120 ARGB"
+            data-marca="Cooler Master"
+            data-nivel="media">
+
+            <img
+                src="https://www.aiuto-jp.co.jp/upload/images/CoolerMaster/%E5%86%B7%E5%8D%B4/%E3%82%B1%E3%83%BC%E3%82%B9%E3%83%95%E3%82%A1%E3%83%B3/CF120%20ARGB/01.jpg"
+                alt="Ventilador Cooler Master CF120 ARGB"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Cooler Master</span>
+                <h3>CF120 ARGB</h3>
+                <span class="nivel media">Media</span>
+
+                <p class="descripcion">
+                    Ventilador de 120 mm con iluminación ARGB.
+                </p>
+
+                <p class="precio">Bs. 145</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Cooler Master CF120 ARGB"
+                    data-precio="145">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 7 NOCTUA NF-A14 -->
+        <article class="producto"
+            data-nombre="Noctua NF-A14 PWM 140mm"
+            data-marca="Noctua"
+            data-nivel="alta">
+
+            <img
+                src="imagenes/arc.jpg"
+                alt="Ventilador Noctua NF-A14"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Noctua</span>
+                <h3>NF-A14 PWM 140mm</h3>
+                <span class="nivel alta">Alta</span>
+
+                <p class="descripcion">
+                    Ventilador de 140 mm diseñado para flujo de aire.
+                </p>
+
+                <p class="precio">Bs. 260</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Noctua NF-A14 PWM 140mm"
+                    data-precio="260">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 8 PASTA TÉRMICA ARCTIC MX-4 -->
+        <article class="producto"
+            data-nombre="Arctic MX-4 Pasta Térmica 4g"
+            data-marca="Arctic"
+            data-nivel="basica">
+
+            <img
+                src="https://cdn11.bigcommerce.com/s-aghmld9q3d/images/stencil/original/products/558/5949/Arctic-MX-4-Thermal-Compound-4g-Syringe-85WmK-ACTCP00002B_4755__12362.1712924341.jpg?c=1"
+                alt="Pasta térmica Arctic MX-4"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Arctic</span>
+                <h3>MX-4 Pasta Térmica 4g</h3>
+                <span class="nivel basica">Básica</span>
+
+                <p class="descripcion">
+                    Compuesto térmico para mejorar el contacto del procesador.
+                </p>
+
+                <p class="precio">Bs. 85</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Arctic MX-4 Pasta Térmica 4g"
+                    data-precio="85">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 9 HAVIT COOLING PAD -->
+        <article class="producto"
+            data-nombre="Havit HV-F2056 Base Refrigerante"
+            data-marca="Havit"
+            data-nivel="media">
+
+            <img
+                src="https://www.prohavit.com/cdn/shop/products/hv-f2056-laptop-cooling-pad-blue_a0e8cd20-680f-44d9-8505-59531c0e86f3.jpg?v=1618589276&width=1500"
+                alt="Base refrigerante Havit para laptop"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Havit</span>
+                <h3>HV-F2056 Cooling Pad</h3>
+                <span class="nivel media">Media</span>
+
+                <p class="descripcion">
+                    Base refrigerante para laptops con ventiladores.
+                </p>
+
+                <p class="precio">Bs. 230</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Havit HV-F2056 Base Refrigerante"
+                    data-precio="230">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 10 DEEPCOOL XFAN 120 -->
+        <article class="producto"
+            data-nombre="DeepCool XFAN 120"
+            data-marca="DeepCool"
+            data-nivel="basica">
+
+            <img
+                src="https://media.bunnings.com.au/api/public/content/a8d8e8785b054a7c95f9c4785bf1cb4e?t=w700dpr1&v=7669efb9"
+                alt="Ventilador DeepCool XFAN 120"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">DeepCool</span>
+                <h3>XFAN 120</h3>
+                <span class="nivel basica">Básica</span>
+
+                <p class="descripcion">
+                    Ventilador de 120 mm para entrada o salida de aire.
+                </p>
+
+                <p class="precio">Bs. 95</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="DeepCool XFAN 120"
+                    data-precio="95">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
+        <h3>KANTUBYTE</h3>
+        <p>Tecnología que conecta posibilidades.</p>
+        <p>© 2026 Kantubyte</p>
+    </footer>
+
+    <script src="refrigeracion.js"></script>
+
+</body>
+</html>

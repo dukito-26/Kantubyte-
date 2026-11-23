@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Memorias RAM | Kantubyte</title>
+
+    <link rel="stylesheet" href="ram.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">
+        <img src="imagenes/logo-kantubyte-transparente.jpg" alt="Kantubyte">
+    </div>
+
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="interiores.html" class="activo">Interiores</a>
+        <a href="carrito.html">Carrito</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="presentacion">
+        <p class="subtitulo">KANTUBYTE • INTERIORES</p>
+        <h1>Memorias RAM</h1>
+        <p>
+            Memorias para mejorar la velocidad, capacidad
+            y rendimiento de tu computadora.
+        </p>
+    </section>
+
+    <section class="controles">
+
+        <input
+            type="search"
+            id="buscador"
+            placeholder="Buscar memoria RAM..."
+        >
+
+        <select id="filtro-nivel">
+            <option value="todos">Todos los niveles</option>
+            <option value="basica">Básica</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+            <option value="premium">Premium</option>
+        </select>
+
+    </section>
+
+    <p id="contador-productos"></p>
+
+    <section class="productos">
+
+        <!-- PRODUCTO 1 -->
+        <article class="producto">
+            <img src="https://techinspection.net/wp-content/uploads/2023/09/s4qZktV1uxefEDs_1694585107-1024x576.jpg" alt="Corsair Vengeance DDR4">
+            <p class="marca-producto">CORSAIR</p>
+            <h3>Vengeance LPX DDR4 8GB</h3>
+            <p class="nivel" data-nivel="basica">Básica</p>
+            <p class="descripcion">8GB • DDR4 • 3200MHz</p>
+            <p class="precio">Bs. 320</p>
+            <button class="agregar-carrito" data-nombre="Corsair Vengeance LPX DDR4 8GB" data-precio="320">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 2 -->
+        <article class="producto">
+            <img src="imagenes/memo.jpg" alt="G Skill Ripjaws DDR4">
+            <p class="marca-producto">G.SKILL</p>
+            <h3>Ripjaws V DDR4 16GB</h3>
+            <p class="nivel" data-nivel="media">Media</p>
+            <p class="descripcion">16GB • DDR4 • 3200MHz</p>
+            <p class="precio">Bs. 480</p>
+            <button class="agregar-carrito" data-nombre="G Skill Ripjaws V DDR4 16GB" data-precio="480">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 3 -->
+        <article class="producto">
+            <img src="https://media.materiel.net/categories/442.jpg" alt="G Skill Aegis DDR4">
+            <p class="marca-producto">G.SKILL</p>
+            <h3>Aegis DDR4 8GB</h3>
+            <p class="nivel" data-nivel="basica">Básica</p>
+            <p class="descripcion">8GB • DDR4 • 3000MHz</p>
+            <p class="precio">Bs. 280</p>
+            <button class="agregar-carrito" data-nombre="G Skill Aegis DDR4 8GB" data-precio="280">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 4 -->
+        <article class="producto">
+            <img src="https://staticg.sportskeeda.com/editor/2024/06/8179e-17188072945324-1920.jpg" alt="Kingston Fury Beast DDR4">
+            <p class="marca-producto">KINGSTON</p>
+            <h3>Fury Beast DDR4 16GB</h3>
+            <p class="nivel" data-nivel="media">Media</p>
+            <p class="descripcion">16GB • DDR4 • 3200MHz</p>
+            <p class="precio">Bs. 450</p>
+            <button class="agregar-carrito" data-nombre="Kingston Fury Beast DDR4 16GB" data-precio="450">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 5 -->
+        <article class="producto">
+            <img src="https://cdn.mos.cms.futurecdn.net/ENczX63Z25YnEAuXoCnkoN.jpg" alt="Corsair Dominator DDR4">
+            <p class="marca-producto">CORSAIR</p>
+            <h3>Dominator Platinum DDR4 32GB</h3>
+            <p class="nivel" data-nivel="alta">Alta</p>
+            <p class="descripcion">32GB • DDR4 • 3200MHz</p>
+            <p class="precio">Bs. 850</p>
+            <button class="agregar-carrito" data-nombre="Corsair Dominator Platinum DDR4 32GB" data-precio="850">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 6 -->
+        <article class="producto">
+            <img src="https://nghenhinvietnam.vn/uploads/global/tunglampv/2026/t03/26/ram/ram_ddr4_001.jpg" alt="XPG y Kingston DDR4">
+            <p class="marca-producto">ADATA XPG</p>
+            <h3>XPG DDR4 16GB</h3>
+            <p class="nivel" data-nivel="media">Media</p>
+            <p class="descripcion">16GB • DDR4 • 3200MHz</p>
+            <p class="precio">Bs. 420</p>
+            <button class="agregar-carrito" data-nombre="ADATA XPG DDR4 16GB" data-precio="420">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 7 -->
+        <article class="producto">
+            <img src="https://www.pcbuildhelper.com/_next/image?q=75&url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Froisunrd%2Fproduction%2F3a3898b7c0876283004f2f2872d745a97554bc62-2752x1536.png%3Fw%3D1920%26q%3D90%26fit%3Dmax%26auto%3Dformat&w=1920" alt="Kingston Fury Beast DDR5">
+            <p class="marca-producto">KINGSTON</p>
+            <h3>Fury Beast DDR5 16GB</h3>
+            <p class="nivel" data-nivel="alta">Alta</p>
+            <p class="descripcion">16GB • DDR5 • 5600MHz</p>
+            <p class="precio">Bs. 620</p>
+            <button class="agregar-carrito" data-nombre="Kingston Fury Beast DDR5 16GB" data-precio="620">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 8 -->
+        <article class="producto">
+            <img src="https://media.pangoly.com/img/9/4/8/6/9486e6c8-78a7-48a5-b785-8b2ecaa1dbea.jpg" alt="G Skill Trident Z5 DDR5">
+            <p class="marca-producto">G.SKILL</p>
+            <h3>Trident Z5 RGB DDR5 32GB</h3>
+            <p class="nivel" data-nivel="premium">Premium</p>
+            <p class="descripcion">32GB • DDR5 • 6000MHz</p>
+            <p class="precio">Bs. 1.250</p>
+            <button class="agregar-carrito" data-nombre="G Skill Trident Z5 RGB DDR5 32GB" data-precio="1250">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 9 -->
+        <article class="producto">
+            <img src="https://www.hwupgrade.it/i/n/Corsair_G.Skill_DDR5_EXPO_720.jpg" alt="Corsair Dominator Platinum RGB DDR5">
+            <p class="marca-producto">CORSAIR</p>
+            <h3>Dominator Platinum RGB DDR5 32GB</h3>
+            <p class="nivel" data-nivel="premium">Premium</p>
+            <p class="descripcion">32GB • DDR5 • RGB</p>
+            <p class="precio">Bs. 1.450</p>
+            <button class="agregar-carrito" data-nombre="Corsair Dominator Platinum RGB DDR5 32GB" data-precio="1450">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 10 -->
+        <article class="producto">
+            <img src="https://staticg.sportskeeda.com/editor/2024/03/9a08a-17110104813284-1920.jpg" alt="Kingston Fury RGB DDR5">
+            <p class="marca-producto">KINGSTON</p>
+            <h3>Fury Beast RGB DDR5 16GB</h3>
+            <p class="nivel" data-nivel="alta">Alta</p>
+            <p class="descripcion">16GB • DDR5 • RGB</p>
+            <p class="precio">Bs. 750</p>
+            <button class="agregar-carrito" data-nombre="Kingston Fury Beast RGB DDR5 16GB" data-precio="750">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 11 -->
+        <article class="producto">
+            <img src="imagenes/memo2.jpg" alt="Corsair Vengeance RGB DDR5">
+            <p class="marca-producto">CORSAIR</p>
+            <h3>Vengeance RGB DDR5 32GB</h3>
+            <p class="nivel" data-nivel="premium">Premium</p>
+            <p class="descripcion">32GB • DDR5 • RGB</p>
+            <p class="precio">Bs. 1.100</p>
+            <button class="agregar-carrito" data-nombre="Corsair Vengeance RGB DDR5 32GB" data-precio="1100">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 12 -->
+        <article class="producto">
+            <img src="https://c1.neweggimages.com/ai/geo/insider/a7-ddr5-kits_1779332386.jpg" alt="Crucial Pro DDR5">
+            <p class="marca-producto">CRUCIAL</p>
+            <h3>Pro DDR5 16GB</h3>
+            <p class="nivel" data-nivel="alta">Alta</p>
+            <p class="descripcion">16GB • DDR5 • 5600MHz</p>
+            <p class="precio">Bs. 650</p>
+            <button class="agregar-carrito" data-nombre="Crucial Pro DDR5 16GB" data-precio="650">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 13 -->
+        <article class="producto">
+            <img src="https://cdn.mos.cms.futurecdn.net/8vJpsie5a5AzMpfRHtBr5h.jpg" alt="HyperX y Crucial DDR4">
+            <p class="marca-producto">HYPERX</p>
+            <h3>Fury DDR4 16GB</h3>
+            <p class="nivel" data-nivel="media">Media</p>
+            <p class="descripcion">16GB • DDR4 • 3200MHz</p>
+            <p class="precio">Bs. 400</p>
+            <button class="agregar-carrito" data-nombre="HyperX Fury DDR4 16GB" data-precio="400">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 14 -->
+        <article class="producto">
+            <img src="https://reviewed-com-res.cloudinary.com/image/fetch/s--X013G-DY--/b_white%2Cc_limit%2Ccs_srgb%2Cf_auto%2Cfl_progressive.strip_profile%2Cg_center%2Cq_auto%2Cw_1200/https%3A/reviewed-production.s3.amazonaws.com/1744675900574/hero.png" alt="Corsair Vengeance Pro RGB">
+            <p class="marca-producto">CORSAIR</p>
+            <h3>Vengeance Pro RGB DDR5 32GB</h3>
+            <p class="nivel" data-nivel="premium">Premium</p>
+            <p class="descripcion">32GB • DDR5 • RGB</p>
+            <p class="precio">Bs. 1.300</p>
+            <button class="agregar-carrito" data-nombre="Corsair Vengeance Pro RGB DDR5 32GB" data-precio="1300">Añadir al carrito</button>
+        </article>
+
+        <!-- PRODUCTO 15 -->
+        <article class="producto">
+            <img src="https://media.kingston.com/kingston/press/ktc-press-fury-family-2400x1500-red.jpg" alt="Kingston Fury Impact y Beast">
+            <p class="marca-producto">KINGSTON</p>
+            <h3>Fury Impact SODIMM 16GB</h3>
+            <p class="nivel" data-nivel="media">Media</p>
+            <p class="descripcion">16GB • Memoria para portátil</p>
+            <p class="precio">Bs. 390</p>
+            <button class="agregar-carrito" data-nombre="Kingston Fury Impact SODIMM 16GB" data-precio="390">Añadir al carrito</button>
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-contenido">
+        <h2>KANTUBYTE</h2>
+        <p>Tecnología que conecta posibilidades.</p>
+
+        <div class="footer-enlaces">
+            <a href="contacto.html">Contactos</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="sobre-nosotros.html">Acerca de</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Kantubyte. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+<script src="ram.js"></script>
+
+</body>
+</html>

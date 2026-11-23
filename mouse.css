@@ -1,0 +1,296 @@
+
+/* =================================
+   KANTUBYTE 🌺
+   ESTILOS DE LA SECCIÓN MOUSE
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #11151D;
+    color: #E9E7E2;
+    font-family: Arial, sans-serif;
+}
+
+/* ENCABEZADO */
+
+.encabezado {
+    background: #181C25;
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 2px solid #B82036;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.marca img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.marca h1 {
+    color: #D6A84B;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #E9E7E2;
+    text-decoration: none;
+    font-size: 14px;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #D6A84B;
+}
+
+/* PORTADA */
+
+.portada {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(
+        135deg,
+        #8E172B,
+        #11151D 75%
+    );
+}
+
+.portada h2 {
+    font-size: 38px;
+    color: #D6A84B;
+    margin-bottom: 12px;
+}
+
+.portada p {
+    color: #E9E7E2;
+    font-size: 16px;
+}
+
+/* SECCIÓN DE PRODUCTOS */
+
+.productos {
+    padding: 45px 5%;
+}
+
+.titulo-seccion {
+    text-align: center;
+    font-size: 27px;
+    color: #D6A84B;
+    margin-bottom: 30px;
+}
+
+/* BUSCADOR Y FILTROS */
+
+.filtros {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filtros input,
+.filtros select {
+    padding: 13px 16px;
+    border: 1px solid #8E172B;
+    border-radius: 8px;
+    background: #181C25;
+    color: #E9E7E2;
+    font-size: 14px;
+    outline: none;
+}
+
+.filtros input {
+    width: 300px;
+    max-width: 100%;
+}
+
+.filtros select {
+    cursor: pointer;
+}
+
+.filtros input:focus,
+.filtros select:focus {
+    border-color: #D6A84B;
+}
+
+#contador-productos {
+    text-align: center;
+    color: #D6A84B;
+    margin: 20px 0 25px;
+    font-size: 14px;
+}
+
+/* CUADRÍCULA */
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 22px;
+}
+
+/* TARJETAS */
+
+.producto {
+    background: #1A1F29;
+    border: 1px solid #343944;
+    border-radius: 13px;
+    overflow: hidden;
+    transition: transform .3s, border-color .3s;
+}
+
+.producto:hover {
+    transform: translateY(-6px);
+    border-color: #D6A84B;
+}
+
+.producto img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    padding: 12px;
+    background: #F5F5F5;
+}
+
+.datos {
+    padding: 17px;
+}
+
+.datos h3 {
+    color: #D6A84B;
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.datos p {
+    color: #D0D0D0;
+    font-size: 13px;
+    line-height: 1.6;
+    margin-bottom: 9px;
+}
+
+.datos .precio {
+    color: #FFFFFF;
+    font-size: 19px;
+    font-weight: bold;
+    margin-top: 12px;
+}
+
+.nivel {
+    display: inline-block;
+    background: #8E172B;
+    color: #FFFFFF;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+/* BOTÓN */
+
+.agregar-carrito {
+    width: 100%;
+    padding: 12px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 7px;
+    background: #B82036;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.agregar-carrito:hover {
+    background: #D6A84B;
+    color: #11151D;
+}
+
+/* PIE DE PÁGINA */
+
+footer {
+    background: #181C25;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 40px;
+    border-top: 2px solid #8E172B;
+}
+
+footer p {
+    color: #BDBDBD;
+    font-size: 13px;
+    line-height: 1.8;
+}
+
+/* TABLETS */
+
+@media (max-width: 1000px) {
+    .contenedor-productos {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+/* CELULARES */
+
+@media (max-width: 700px) {
+    .encabezado {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 13px;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 13px;
+    }
+
+    .portada h2 {
+        font-size: 30px;
+    }
+
+    .producto img {
+        height: 150px;
+    }
+
+    .datos {
+        padding: 12px;
+    }
+
+    .datos h3 {
+        font-size: 14px;
+    }
+}
+
+/* CELULARES PEQUEÑOS */
+
+@media (max-width: 380px) {
+    .contenedor-productos {
+        grid-template-columns: 1fr;
+    }
+}

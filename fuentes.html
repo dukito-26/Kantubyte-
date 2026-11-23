@@ -1,0 +1,397 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Fuentes de poder | Kantubyte</title>
+
+    <link rel="stylesheet" href="fuentes.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO -->
+    <header class="encabezado">
+        <div class="marca">
+            <img
+                src="imagenes/logo-kantubyte-transparente.jpg"
+                alt="Logo de Kantubyte"
+            >
+            <h1>KANTUBYTE</h1>
+        </div>
+
+        <nav class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="interiores.html">Interiores</a>
+            <a href="carrito.html">Carrito</a>
+        </nav>
+    </header>
+
+    <!-- PORTADA -->
+    <section class="portada">
+        <p class="etiqueta-portada">KANTUBYTE · INTERIORES</p>
+
+        <h2>Fuentes de poder</h2>
+
+        <p>
+            Energía estable y confiable para cada componente
+            de tu computadora.
+        </p>
+    </section>
+
+    <!-- BUSCADOR Y FILTRO -->
+    <section class="filtros">
+
+        <input
+            type="text"
+            id="buscador"
+            placeholder="Buscar fuente o marca..."
+            autocomplete="off"
+        >
+
+        <select id="filtro-nivel">
+            <option value="todos">Todos los niveles</option>
+            <option value="basica">Básica</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+            <option value="premium">Premium</option>
+        </select>
+
+        <p class="contador">
+            Mostrando
+            <span id="contador-productos">10</span>
+            productos
+        </p>
+
+    </section>
+
+    <!-- PRODUCTOS -->
+    <main class="contenedor-productos" id="contenedor-productos">
+
+        <!-- 1 CORSAIR CV550 -->
+        <article class="producto"
+            data-nombre="Corsair CV550 550W"
+            data-marca="Corsair"
+            data-nivel="media">
+
+            <img
+                src="https://images.tcdn.com.br/img/img_prod/1042771/fonte_corsair_cv550_550w_bivolt_80_plus_bronze_cp_9020210_br_1745_1_6f0aa3e8d7e72bb542202b88918ab034.jpg"
+                alt="Fuente Corsair CV550 de 550W"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Corsair</span>
+                <h3>CV550 550W</h3>
+                <span class="nivel media">Media</span>
+
+                <p class="descripcion">
+                    Fuente de 550W para equipos de uso diario.
+                </p>
+
+                <p class="precio">Bs. 480</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Corsair CV550 550W"
+                    data-precio="480">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 2 CORSAIR RM750e -->
+        <article class="producto"
+            data-nombre="Corsair RM750e 750W"
+            data-marca="Corsair"
+            data-nivel="premium">
+
+            <img
+                src="https://www.dateks.lv/images/pic/1200/1200/963/1885.jpg"
+                alt="Fuente Corsair RM750e de 750W"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Corsair</span>
+                <h3>RM750e 750W</h3>
+                <span class="nivel premium">Premium</span>
+
+                <p class="descripcion">
+                    Fuente modular para configuraciones potentes.
+                </p>
+
+                <p class="precio">Bs. 1.150</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Corsair RM750e 750W"
+                    data-precio="1150">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 3 COOLER MASTER MWE 650 -->
+        <article class="producto"
+            data-nombre="Cooler Master MWE Bronze 650W"
+            data-marca="Cooler Master"
+            data-nivel="alta">
+
+            <img
+                src="https://files.pccasegear.com/images/1579823099-MPE-6501-ACAAB-AU-thbv2.jpg"
+                alt="Fuente Cooler Master MWE Bronze 650W"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Cooler Master</span>
+                <h3>MWE Bronze 650W</h3>
+                <span class="nivel alta">Alta</span>
+
+                <p class="descripcion">
+                    Fuente de 650W con certificación Bronze.
+                </p>
+
+                <p class="precio">Bs. 690</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Cooler Master MWE Bronze 650W"
+                    data-precio="690">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 4 EVGA 600 W1 -->
+        <article class="producto"
+            data-nombre="EVGA 600 W1 600W"
+            data-marca="EVGA"
+            data-nivel="basica">
+
+            <img
+                src="https://img.pccomponentes.com/articles/10/104076/3.jpg"
+                alt="Fuente EVGA 600 W1 de 600W"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">EVGA</span>
+                <h3>600 W1 600W</h3>
+                <span class="nivel basica">Básica</span>
+
+                <p class="descripcion">
+                    Fuente sencilla para equipos de entrada.
+                </p>
+
+                <p class="precio">Bs. 420</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="EVGA 600 W1 600W"
+                    data-precio="420">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 5 MSI MAG A650BN -->
+        <article class="producto"
+            data-nombre="MSI MAG A650BN 650W"
+            data-marca="MSI"
+            data-nivel="alta">
+
+            <img
+                src="https://www.skytech.lt/images/large/7/2980007.png"
+                alt="Fuente MSI MAG A650BN de 650W"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">MSI</span>
+                <h3>MAG A650BN 650W</h3>
+                <span class="nivel alta">Alta</span>
+
+                <p class="descripcion">
+                    Fuente eficiente para computadoras gaming.
+                </p>
+
+                <p class="precio">Bs. 720</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="MSI MAG A650BN 650W"
+                    data-precio="720">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 6 GIGABYTE P650B -->
+        <article class="producto"
+            data-nombre="Gigabyte P650B 650W"
+            data-marca="Gigabyte"
+            data-nivel="media">
+
+            <img
+                src="https://promart.vteximg.com.br/arquivos/ids/7483289/image-6adcab906e384f02947412116de248de.jpg?v=638307767955470000"
+                alt="Fuente Gigabyte P650B de 650W"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Gigabyte</span>
+                <h3>P650B 650W</h3>
+                <span class="nivel media">Media</span>
+
+                <p class="descripcion">
+                    Fuente de alimentación para PC de escritorio.
+                </p>
+
+                <p class="precio">Bs. 610</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Gigabyte P650B 650W"
+                    data-precio="610">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 7 THERMALTAKE SMART 700 -->
+        <article class="producto"
+            data-nombre="Thermaltake Smart 700W"
+            data-marca="Thermaltake"
+            data-nivel="media">
+
+            <img
+                src="https://multimedia.bbycastatic.ca/multimedia/products/500x500/148/14870/14870096.jpg"
+                alt="Fuente Thermaltake Smart de 700W"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Thermaltake</span>
+                <h3>Smart 700W</h3>
+                <span class="nivel media">Media</span>
+
+                <p class="descripcion">
+                    Potencia de 700W para equipos versátiles.
+                </p>
+
+                <p class="precio">Bs. 590</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Thermaltake Smart 700W"
+                    data-precio="590">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 8 SEASONIC FOCUS GX850 -->
+        <article class="producto"
+            data-nombre="Seasonic Focus GX-850 850W"
+            data-marca="Seasonic"
+            data-nivel="premium">
+
+            <img
+                src="https://www.discoazul.com/uploads/media/images/fuente-de-alimentacion-seasonic-focus-gx850-atx-850w-15.jpg"
+                alt="Fuente Seasonic Focus GX850 de 850W"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">Seasonic</span>
+                <h3>Focus GX-850 850W</h3>
+                <span class="nivel premium">Premium</span>
+
+                <p class="descripcion">
+                    Fuente modular para sistemas de alto rendimiento.
+                </p>
+
+                <p class="precio">Bs. 1.450</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="Seasonic Focus GX-850 850W"
+                    data-precio="1450">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 9 XPG PYLON 550 -->
+        <article class="producto"
+            data-nombre="XPG Pylon 550W"
+            data-marca="XPG"
+            data-nivel="media">
+
+            <img
+                src="https://images.pcel.com/600/Hardware-Fuentes-de-Poder-XPG-PYLON550B-BKCUS-374812-7MBlZkR43HZyKOal.jpg"
+                alt="Fuente XPG Pylon de 550W"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">XPG</span>
+                <h3>Pylon 550W</h3>
+                <span class="nivel media">Media</span>
+
+                <p class="descripcion">
+                    Fuente compacta para configuraciones equilibradas.
+                </p>
+
+                <p class="precio">Bs. 520</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="XPG Pylon 550W"
+                    data-precio="520">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+        <!-- 10 ASUS TUF GAMING 850 -->
+        <article class="producto"
+            data-nombre="ASUS TUF Gaming 850W"
+            data-marca="ASUS"
+            data-nivel="premium">
+
+            <img
+                src="https://img.terabyteshop.com.br/produto/g/fonte-asus-tuf-gaming-850g-850w-80-plus-gold-pfc-ativo-full-modular-preto-90ye00s2-b0sa00_268468.jpg"
+                alt="Fuente ASUS TUF Gaming de 850W"
+                loading="lazy"
+            >
+
+            <div class="datos">
+                <span class="marca-producto">ASUS</span>
+                <h3>TUF Gaming 850W</h3>
+                <span class="nivel premium">Premium</span>
+
+                <p class="descripcion">
+                    Fuente robusta para equipos gaming exigentes.
+                </p>
+
+                <p class="precio">Bs. 1.380</p>
+
+                <button class="agregar-carrito"
+                    data-nombre="ASUS TUF Gaming 850W"
+                    data-precio="1380">
+                    Añadir al carrito
+                </button>
+            </div>
+        </article>
+
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer class="pie-pagina">
+        <h3>KANTUBYTE</h3>
+        <p>Tecnología que conecta posibilidades.</p>
+        <p>© 2026 Kantubyte</p>
+    </footer>
+
+    <!-- JS -->
+    <script src="fuentes.js"></script>
+
+</body>
+</html>

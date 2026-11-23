@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarjetas gráficas | Kantubyte</title>
+    <link rel="stylesheet" href="graficas.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <img src="imagenes/logo-kantubyte-transparente.jpg" alt="Kantubyte">
+    </div>
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="interiores.html" class="activo">Interiores</a>
+        <a href="carrito.html">Carrito</a>
+    </nav>
+</header>
+
+<main>
+    <section class="presentacion">
+        <p class="subtitulo">KANTUBYTE • INTERIORES</p>
+        <h1>Tarjetas gráficas</h1>
+        <p>Potencia visual para juegos, diseño y creación.</p>
+    </section>
+
+    <section class="controles">
+        <input type="search" id="buscador" placeholder="Buscar tarjeta gráfica...">
+        <select id="filtro-nivel">
+            <option value="todos">Todos los niveles</option>
+            <option value="basica">Básica</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+            <option value="premium">Premium</option>
+        </select>
+    </section>
+
+    <p id="contador-productos"></p>
+
+    <section class="productos">
+
+        <article class="producto">
+            <img src="imagenes/nose.jpg" alt="GeForce GT 1030">
+            <p class="marca-producto">NVIDIA</p>
+            <h3>GeForce GT 1030</h3>
+            <p class="nivel" data-nivel="basica">Básica</p>
+            <p class="descripcion">2GB • GDDR5</p>
+            <p class="precio">Bs. 650</p>
+            <button class="agregar-carrito" data-nombre="GeForce GT 1030" data-precio="650">Añadir al carrito</button>
+        </article>
+
+        <article class="producto">
+            <img src="imagenes/ima.jpg" alt="GeForce GTX 1650">
+            <p class="marca-producto">NVIDIA</p>
+            <h3>GeForce GTX 1650</h3>
+            <p class="nivel" data-nivel="basica">Básica</p>
+            <p class="descripcion">4GB • GDDR6</p>
+            <p class="precio">Bs. 1.350</p>
+            <button class="agregar-carrito" data-nombre="GeForce GTX 1650" data-precio="1350">Añadir al carrito</button>
+        </article>
+
+        <article class="producto">
+            <img src="imagenes/gi.jpg" alt="GeForce GTX 1660 Super">
+            <p class="marca-producto">NVIDIA</p>
+            <h3>GeForce GTX 1660 Super</h3>
+            <p class="nivel" data-nivel="media">Media</p>
+            <p class="descripcion">6GB • GDDR6</p>
+            <p class="precio">Bs. 1.700</p>
+            <button class="agregar-carrito" data-nombre="GeForce GTX 1660 Super" data-precio="1700">Añadir al carrito</button>
+        </article>
+
+        <article class="producto">
+            <img src="https://i2hard.ru/upload/iblock/f96/f9682d76cabff177277ff61fb2d887b2.jpg" alt="Radeon RX 6600">
+            <p class="marca-producto">AMD RADEON</p>
+            <h3>Radeon RX 6600</h3>
+            <p class="nivel" data-nivel="media">Media</p>
+            <p class="descripcion">8GB • GDDR6</p>
+            <p class="precio">Bs. 2.000</p>
+            <button class="agregar-carrito" data-nombre="Radeon RX 6600" data-precio="2000">Añadir al carrito</button>
+        </article>
+
+        <article class="producto">
+            <img src="https://pics.computerbase.de/1/0/0/5/1/7-94d414fbaadfc43d/article-1280x720.6176bc2c.jpg" alt="Radeon RX 6700 XT">
+            <p class="marca-producto">AMD RADEON</p>
+            <h3>Radeon RX 6700 XT</h3>
+            <p class="nivel" data-nivel="alta">Alta</p>
+            <p class="descripcion">12GB • GDDR6</p>
+            <p class="precio">Bs. 2.800</p>
+            <button class="agregar-carrito" data-nombre="Radeon RX 6700 XT" data-precio="2800">Añadir al carrito</button>
+        </article>
+
+        <article class="producto">
+            <img src="https://pics.computerbase.de/1/1/6/8/1/0-a68156b483f6159f/article-1280x720.8a9f3daf.jpg" alt="Radeon RX 9070">
+            <p class="marca-producto">AMD RADEON</p>
+            <h3>Radeon RX 9070</h3>
+            <p class="nivel" data-nivel="premium">Premium</p>
+            <p class="descripcion">16GB • GDDR6</p>
+            <p class="precio">Bs. 5.200</p>
+            <button class="agregar-carrito" data-nombre="Radeon RX 9070" data-precio="5200">Añadir al carrito</button>
+        </article>
+
+        <article class="producto">
+            <img src="https://cdn.mos.cms.futurecdn.net/v2/t%3A0%2Cl%3A240%2Ccw%3A1440%2Cch%3A1080%2Cq%3A80%2Cw%3A1440/NRzkwB9rRbYVsLHaBFHMQM.jpg" alt="GeForce RTX 3060">
+            <p class="marca-producto">NVIDIA</p>
+            <h3>GeForce RTX 3060</h3>
+            <p class="nivel" data-nivel="alta">Alta</p>
+            <p class="descripcion">12GB • GDDR6</p>
+            <p class="precio">Bs. 2.900</p>
+            <button class="agregar-carrito" data-nombre="GeForce RTX 3060" data-precio="2900">Añadir al carrito</button>
+        </article>
+
+        <article class="producto">
+            <img src="https://img.championat.com/s/1350x900/news/big/q/v/videokarty-geforce-rtx-5000-vyjdut-v-yanvare-2025-goda-insajdery_1703850293716156922.jpg" alt="GeForce RTX 4090">
+            <p class="marca-producto">NVIDIA</p>
+            <h3>GeForce RTX 4090</h3>
+            <p class="nivel" data-nivel="premium">Premium</p>
+            <p class="descripcion">24GB • GDDR6X</p>
+            <p class="precio">Bs. 13.500</p>
+            <button class="agregar-carrito" data-nombre="GeForce RTX 4090" data-precio="13500">Añadir al carrito</button>
+        </article>
+
+        <article class="producto">
+            <img src="https://cdn.mos.cms.futurecdn.net/v2/t%3A0%2Cl%3A1673%2Ccw%3A4304%2Cch%3A4304%2Cq%3A80%2Cw%3A2560/ygusRP4Kh7LR8xwKdsJWA8.jpg" alt="GeForce RTX 5080">
+            <p class="marca-producto">NVIDIA</p>
+            <h3>GeForce RTX 5080</h3>
+            <p class="nivel" data-nivel="premium">Premium</p>
+            <p class="descripcion">16GB • GDDR7</p>
+            <p class="precio">Bs. 10.500</p>
+            <button class="agregar-carrito" data-nombre="GeForce RTX 5080" data-precio="10500">Añadir al carrito</button>
+        </article>
+
+        <article class="producto">
+            <img src="https://img.pccomponentes.com/articles/38/380125/5545-gigabyte-amd-radeon-rx-6700-xt-12gb-gddr6-caracteristicas.jpg" alt="Gigabyte Radeon RX 6700 XT">
+            <p class="marca-producto">GIGABYTE</p>
+            <h3>Gigabyte Radeon RX 6700 XT</h3>
+            <p class="nivel" data-nivel="alta">Alta</p>
+            <p class="descripcion">12GB • GDDR6 • Triple ventilador</p>
+            <p class="precio">Bs. 3.100</p>
+            <button class="agregar-carrito" data-nombre="Gigabyte Radeon RX 6700 XT" data-precio="3100">Añadir al carrito</button>
+        </article>
+
+    </section>
+</main>
+
+<footer>
+    <div class="footer-contenido">
+        <h2>KANTUBYTE</h2>
+        <p>Tecnología que conecta posibilidades.</p>
+        <div class="footer-enlaces">
+            <a href="contacto.html">Contactos</a>
+            <a href="soporte.html">Soporte</a>
+            <a href="sobre-nosotros.html">Acerca de</a>
+        </div>
+        <p class="copyright">© 2026 Kantubyte. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+<script src="graficas.js"></script>
+</body>
+</html>

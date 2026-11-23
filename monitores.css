@@ -1,0 +1,267 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #11151D;
+    color: #E9E7E2;
+}
+
+.encabezado {
+    background: #171B24;
+    padding: 15px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 2px solid #8E172B;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.marca img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.marca h1 {
+    color: #D6A84B;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: #E9E7E2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #D6A84B;
+}
+
+.portada {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(135deg, #35121D, #171B24, #24151B);
+    border-bottom: 1px solid #8E172B;
+}
+
+.etiqueta {
+    color: #D6A84B;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.portada h2 {
+    font-size: 42px;
+    margin: 15px 0;
+    color: #E9E7E2;
+}
+
+.portada p {
+    color: #C5C2BD;
+    font-size: 16px;
+}
+
+.contenido {
+    width: 90%;
+    max-width: 1400px;
+    margin: 35px auto;
+}
+
+.filtros {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.filtros input,
+.filtros select {
+    background: #1B202B;
+    color: #E9E7E2;
+    border: 1px solid #65404A;
+    padding: 13px;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+}
+
+.filtros input {
+    flex: 1;
+    min-width: 0;
+}
+
+.filtros input:focus,
+.filtros select:focus {
+    border-color: #D6A84B;
+}
+
+#contador-productos {
+    color: #D6A84B;
+    margin: 18px 0;
+    font-size: 14px;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.producto {
+    background: #1B202B;
+    border: 1px solid #392B32;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-6px);
+    border-color: #D6A84B;
+}
+
+.producto img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    padding: 12px;
+    background: #F0F0F0;
+}
+
+.datos {
+    padding: 17px;
+}
+
+.marca-producto {
+    color: #D6A84B;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.datos h3 {
+    font-size: 17px;
+    margin: 9px 0;
+    color: #FFFFFF;
+}
+
+.datos p {
+    color: #C5C2BD;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+}
+
+.nivel {
+    display: inline-block;
+    background: #48202B;
+    color: #F0C66E;
+    padding: 6px 11px;
+    border-radius: 20px;
+    font-size: 11px;
+    margin-bottom: 12px;
+}
+
+.datos .precio {
+    color: #D6A84B;
+    font-size: 21px;
+    font-weight: bold;
+    margin: 5px 0 15px;
+}
+
+.agregar-carrito {
+    width: 100%;
+    padding: 11px;
+    border: none;
+    border-radius: 6px;
+    background: #B82036;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.agregar-carrito:hover {
+    background: #8E172B;
+}
+
+.producto.oculto {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    background: #171B24;
+    border-top: 2px solid #8E172B;
+    padding: 30px 15px;
+    margin-top: 60px;
+}
+
+footer h3 {
+    color: #D6A84B;
+    margin-bottom: 10px;
+}
+
+footer p {
+    color: #C5C2BD;
+    font-size: 13px;
+    margin: 7px;
+}
+
+@media (max-width: 1050px) {
+    .contenedor-productos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 750px) {
+    .encabezado {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portada h2 {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filtros {
+        flex-direction: column;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: 1fr;
+    }
+
+    .producto img {
+        height: 220px;
+    }
+}

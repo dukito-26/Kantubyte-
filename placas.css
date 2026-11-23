@@ -1,0 +1,458 @@
+
+/* =========================================
+   KANTUBYTE 🌺
+   PLACAS MADRE - ESTILOS COMPLETOS
+========================================= */
+
+/* REINICIO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #11151D;
+    color: #E9E7E2;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+header {
+    width: 100%;
+    background: #171B24;
+    padding: 12px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 2px solid #B82036;
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: block;
+}
+
+.logo img {
+    display: block;
+    width: 75px;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* NAVEGACIÓN */
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #E9E7E2;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #D6A84B;
+}
+
+/* =========================================
+   PORTADA
+========================================= */
+
+.portada {
+    width: 100%;
+    text-align: center;
+    padding: 45px 20px;
+    background: linear-gradient(
+        135deg,
+        #171B24,
+        #1B202B,
+        #25131A
+    );
+    border-bottom: 2px solid #B82036;
+}
+
+.portada p:first-child {
+    color: #D6A84B;
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.portada h1 {
+    color: #E9E7E2;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.portada p:last-child {
+    color: #D0D0D0;
+    font-size: 17px;
+    line-height: 1.5;
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+/* =========================================
+   CONTENEDOR DE PRODUCTOS
+========================================= */
+
+.contenedor-productos {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 35px 5%;
+}
+
+/* =========================================
+   BUSCADOR Y FILTRO
+========================================= */
+
+.filtros {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
+/* BUSCADOR */
+
+#buscador {
+    width: 100%;
+    max-width: 600px;
+    padding: 14px 16px;
+    background: #171B24;
+    color: #E9E7E2;
+    border: 1px solid #B82036;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#buscador::placeholder {
+    color: #858A94;
+}
+
+#buscador:focus {
+    border-color: #D6A84B;
+    box-shadow: 0 0 10px #D6A84B33;
+}
+
+/* SELECTOR */
+
+#filtro-nivel {
+    padding: 13px 15px;
+    background: #171B24;
+    color: #E9E7E2;
+    border: 1px solid #B82036;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+}
+
+#filtro-nivel:focus {
+    border-color: #D6A84B;
+}
+
+/* CONTADOR */
+
+#contador-productos {
+    text-align: center;
+    color: #D6A84B;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* =========================================
+   CUADRÍCULA DE PRODUCTOS
+========================================= */
+
+.productos {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(230px, 1fr)
+    );
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* =========================================
+   TARJETAS
+========================================= */
+
+.producto {
+    background: #171B24;
+    border: 1px solid #343A46;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    transition: transform 0.3s, border-color 0.3s,
+                box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+    border-color: #B82036;
+    box-shadow: 0 8px 20px #B8203633;
+}
+
+/* =========================================
+   IMÁGENES DE PLACAS MADRE
+========================================= */
+
+.producto img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    padding: 15px;
+    background: #1B202B;
+    object-fit: contain;
+    border-bottom: 1px solid #343A46;
+}
+
+/* =========================================
+   INFORMACIÓN DE PRODUCTOS
+========================================= */
+
+.datos {
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+/* MARCA */
+
+.marca-producto {
+    color: #D6A84B;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-bottom: 8px;
+}
+
+/* NOMBRE */
+
+.producto h3 {
+    color: #E9E7E2;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+/* NIVEL */
+
+.nivel {
+    display: inline-block;
+    width: fit-content;
+    padding: 6px 12px;
+    background: #25131A;
+    color: #D6A84B;
+    border: 1px solid #B82036;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+/* PRECIO */
+
+.precio {
+    color: #E9E7E2;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+/* =========================================
+   BOTÓN AÑADIR AL CARRITO
+========================================= */
+
+.agregar-carrito {
+    width: 100%;
+    padding: 13px 10px;
+    background: #B82036;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.agregar-carrito:hover {
+    background: #8E172B;
+}
+
+.agregar-carrito:active {
+    transform: scale(0.97);
+}
+
+/* BOTÓN VERDE DESPUÉS DE AÑADIR */
+
+.agregar-carrito.agregado {
+    background: #218838;
+    color: #FFFFFF;
+}
+
+.agregar-carrito.agregado:hover {
+    background: #218838;
+}
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+    width: 100%;
+    background: #171B24;
+    border-top: 2px solid #B82036;
+    padding: 30px 5%;
+    margin-top: 45px;
+    text-align: center;
+}
+
+footer p {
+    color: #E9E7E2;
+    font-size: 14px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+footer strong {
+    color: #D6A84B;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+footer a {
+    color: #D6A84B;
+    text-decoration: none;
+    margin: 0 7px;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #B82036;
+}
+
+/* =========================================
+   RESPONSIVE - CELULARES
+========================================= */
+
+@media (max-width: 600px) {
+
+    header {
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 4%;
+    }
+
+    .logo img {
+        width: 65px;
+    }
+
+    nav {
+        width: 100%;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .portada {
+        padding: 35px 15px;
+    }
+
+    .portada h1 {
+        font-size: 27px;
+    }
+
+    .portada p:last-child {
+        font-size: 16px;
+    }
+
+    .contenedor-productos {
+        padding: 25px 4%;
+    }
+
+    .filtros {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #buscador {
+        max-width: 100%;
+    }
+
+    #filtro-nivel {
+        width: 100%;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .producto img {
+        height: 230px;
+    }
+
+    footer {
+        padding: 25px 4%;
+    }
+}
+
+/* =========================================
+   TABLETS
+========================================= */
+
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .productos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .producto img {
+        height: 210px;
+    }
+}

@@ -1,0 +1,648 @@
+
+/* ========================================
+   KANTUBYTE - CONTACTO
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --fondo: #100d12;
+    --panel: #1d1720;
+    --encabezado: #1b141c;
+
+    --rojo: #a9273f;
+    --rojo-hover: #d33b55;
+
+    --dorado: #f4c95d;
+    --texto: #f5f0f5;
+    --texto-suave: #bdb2bf;
+
+    --borde: #382331;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--fondo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+
+/* OCULTAR BLOQUES */
+
+.oculto {
+    display: none !important;
+}
+
+
+/* ========================================
+   ENCABEZADO
+======================================== */
+
+.encabezado {
+    background: var(--encabezado);
+    border-bottom: 2px solid var(--rojo);
+
+    padding: 18px 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.marca img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.marca h2 {
+    color: var(--dorado);
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.marca span {
+    color: var(--texto-suave);
+    font-size: 12px;
+}
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.navegacion a {
+    padding: 9px 13px;
+    border-radius: 7px;
+
+    color: var(--texto-suave);
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.navegacion a:hover,
+.navegacion a.activo {
+    color: var(--dorado);
+    background: #a9273f20;
+}
+
+
+/* ========================================
+   PORTADA
+======================================== */
+
+.portada {
+    min-height: 340px;
+    padding: 65px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+
+    background:
+        radial-gradient(
+            circle at 85% 45%,
+            #a9273f25,
+            transparent 35%
+        ),
+        var(--fondo);
+
+    border-bottom: 1px solid var(--borde);
+}
+
+.portada-contenido {
+    max-width: 650px;
+}
+
+.etiqueta {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: var(--dorado);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.portada h1 {
+    margin-bottom: 20px;
+
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.2;
+}
+
+.portada h1 span {
+    color: var(--rojo-hover);
+}
+
+.portada p {
+    max-width: 550px;
+    color: var(--texto-suave);
+    font-size: 17px;
+}
+
+.simbolo {
+    min-width: 180px;
+    text-align: center;
+}
+
+.simbolo span {
+    display: block;
+
+    color: var(--dorado);
+    font-size: 100px;
+    line-height: 1;
+
+    text-shadow: 0 0 35px #f4c95d40;
+}
+
+.simbolo p {
+    margin-top: 15px;
+
+    color: var(--dorado);
+    font-size: 13px;
+    letter-spacing: 4px;
+}
+
+
+/* ========================================
+   SECCIONES
+======================================== */
+
+.seccion {
+    padding: 70px 8%;
+}
+
+.titulo-seccion {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.titulo-seccion span {
+    color: var(--dorado);
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.titulo-seccion h2 {
+    margin: 12px 0;
+    font-size: 32px;
+}
+
+.titulo-seccion p {
+    color: var(--texto-suave);
+}
+
+
+/* ========================================
+   TARJETAS
+======================================== */
+
+.opciones {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.opcion-card {
+    padding: 30px 25px;
+
+    background: var(--panel);
+    border: 1px solid var(--borde);
+    border-radius: 16px;
+
+    text-align: center;
+    transition: 0.3s;
+}
+
+.opcion-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--rojo);
+    box-shadow: 0 10px 30px #a9273f15;
+}
+
+.icono {
+    width: 55px;
+    height: 55px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 14px;
+
+    background: #a9273f20;
+    color: var(--dorado);
+
+    font-size: 25px;
+}
+
+.opcion-card h3 {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.opcion-card p {
+    color: var(--texto-suave);
+    font-size: 14px;
+}
+
+
+/* ========================================
+   FORMULARIO
+======================================== */
+
+.formulario-seccion {
+    background: #151016;
+}
+
+.formulario-contenedor {
+    max-width: 650px;
+    margin: 0 auto;
+
+    padding: 40px;
+
+    background: var(--panel);
+    border: 1px solid var(--borde);
+    border-radius: 20px;
+}
+
+.campo {
+    margin-bottom: 25px;
+}
+
+.campo label {
+    display: block;
+    margin-bottom: 10px;
+
+    color: var(--dorado);
+    font-size: 16px;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    display: block;
+    width: 100%;
+
+    padding: 15px;
+
+    background: #100d12;
+    color: var(--texto);
+
+    border: 1px solid var(--borde);
+    border-radius: 12px;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+.campo input,
+.campo select {
+    min-height: 55px;
+}
+
+.campo textarea {
+    min-height: 180px;
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--rojo-hover);
+    box-shadow: 0 0 0 3px #a9273f20;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: #827783;
+}
+
+.campo select {
+    cursor: pointer;
+}
+
+
+/* ========================================
+   BOTÓN ENVIAR
+======================================== */
+
+.boton-enviar {
+    display: block;
+    width: 100%;
+
+    padding: 17px 20px;
+
+    background: var(--rojo);
+    color: var(--texto);
+
+    border: 1px solid transparent;
+    border-radius: 12px;
+
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.boton-enviar:hover {
+    background: var(--rojo-hover);
+    border-color: var(--dorado);
+
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px #a9273f30;
+}
+
+
+/* ========================================
+   MENSAJE DE ÉXITO
+======================================== */
+
+.mensaje-exito {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.exito-icono {
+    width: 65px;
+    height: 65px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #a9273f25;
+    border: 1px solid var(--rojo);
+    border-radius: 50%;
+
+    color: var(--dorado);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.mensaje-exito h3 {
+    margin-bottom: 12px;
+    font-size: 27px;
+}
+
+.mensaje-exito p {
+    margin-bottom: 25px;
+    color: var(--texto-suave);
+}
+
+
+/* ========================================
+   BOTÓN ENVIAR OTRO COMENTARIO
+======================================== */
+
+#nuevo-comentario,
+.boton-secundario {
+    display: block !important;
+    width: 100% !important;
+    max-width: 350px;
+
+    margin: 20px auto 0;
+    padding: 16px 20px;
+
+    background: var(--rojo) !important;
+    color: var(--texto) !important;
+
+    border: 1px solid var(--dorado) !important;
+    border-radius: 12px !important;
+
+    font-family: Arial, Helvetica, sans-serif !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    letter-spacing: 1px;
+
+    text-align: center;
+    white-space: normal;
+
+    appearance: none;
+    -webkit-appearance: none;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#nuevo-comentario:hover,
+.boton-secundario:hover {
+    background: var(--rojo-hover) !important;
+
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px #a9273f30;
+}
+
+
+/* ========================================
+   PIE DE PÁGINA
+======================================== */
+
+.pie {
+    padding: 55px 8% 30px;
+
+    background: var(--encabezado);
+    border-top: 2px solid var(--rojo);
+
+    text-align: center;
+}
+
+.pie-marca h2 {
+    color: var(--dorado);
+    font-size: 30px;
+    letter-spacing: 3px;
+}
+
+.pie-marca p {
+    margin-top: 8px;
+    color: var(--texto-suave);
+}
+
+.pie-enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+    margin: 30px 0;
+}
+
+.pie-enlaces a {
+    color: var(--texto);
+    transition: 0.3s;
+}
+
+.pie-enlaces a:hover {
+    color: var(--dorado);
+}
+
+.copyright {
+    margin-top: 25px;
+    color: #827783;
+    font-size: 14px;
+}
+
+
+/* ========================================
+   TABLET
+======================================== */
+
+@media (max-width: 900px) {
+
+    .encabezado {
+        justify-content: center;
+    }
+
+    .navegacion {
+        width: 100%;
+    }
+
+    .opciones {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .portada {
+        padding: 55px 6%;
+    }
+
+}
+
+
+/* ========================================
+   CELULAR
+======================================== */
+
+@media (max-width: 600px) {
+
+    .encabezado {
+        padding: 15px 4%;
+    }
+
+    .marca img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .marca h2 {
+        font-size: 19px;
+    }
+
+    .navegacion {
+        gap: 3px;
+    }
+
+    .navegacion a {
+        padding: 8px 9px;
+        font-size: 12px;
+    }
+
+    .portada {
+        min-height: auto;
+        padding: 50px 7%;
+    }
+
+    .portada h1 {
+        font-size: 36px;
+    }
+
+    .portada p {
+        font-size: 15px;
+    }
+
+    .simbolo {
+        display: none;
+    }
+
+    .seccion {
+        padding: 50px 6%;
+    }
+
+    .titulo-seccion h2 {
+        font-size: 26px;
+    }
+
+    .opciones {
+        grid-template-columns: 1fr;
+    }
+
+    .opcion-card {
+        padding: 25px;
+    }
+
+    .formulario-contenedor {
+        padding: 25px 18px;
+        border-radius: 15px;
+    }
+
+    .campo label {
+        font-size: 15px;
+    }
+
+    .campo input,
+    .campo select,
+    .campo textarea {
+        font-size: 16px;
+    }
+
+    .mensaje-exito h3 {
+        font-size: 24px;
+    }
+
+    .pie {
+        padding: 40px 5% 25px;
+    }
+
+    .pie-marca h2 {
+        font-size: 25px;
+    }
+
+    .pie-enlaces {
+        gap: 18px;
+        font-size: 14px;
+    }
+
+    .copyright {
+        font-size: 12px;
+    }
+
+}

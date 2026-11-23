@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Almacenamiento | Kantubyte</title>
+
+    <link rel="stylesheet" href="almacenamiento.css">
+</head>
+
+<body>
+
+    <!-- ================= ENCABEZADO ================= -->
+    <header class="encabezado">
+
+        <div class="marca">
+            <img
+                src="imagenes/logo-kantubyte-transparente.jpg"
+                alt="Logo de Kantubyte"
+            >
+
+            <h1>KANTUBYTE</h1>
+        </div>
+
+        <nav class="navegacion">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="exteriores.html">Exteriores</a>
+            <a href="carrito.html">Carrito</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= PORTADA ================= -->
+    <section class="portada">
+
+        <p class="etiqueta-portada">
+            KANTUBYTE · INTERIORES
+        </p>
+
+        <h2>Almacenamiento</h2>
+
+        <p>
+            Encuentra espacio, velocidad y seguridad
+            para todos tus archivos.
+        </p>
+
+    </section>
+
+
+    <!-- ================= BUSCADOR Y FILTRO ================= -->
+    <section class="filtros">
+
+        <input
+            type="text"
+            id="buscador"
+            placeholder="Buscar almacenamiento o marca..."
+            autocomplete="off"
+        >
+
+        <select id="filtro-nivel">
+            <option value="todos">Todos los niveles</option>
+            <option value="basica">Básica</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+            <option value="premium">Premium</option>
+        </select>
+
+        <p class="contador">
+            Mostrando
+            <span id="contador-productos">10</span>
+            productos
+        </p>
+
+    </section>
+
+
+    <!-- ================= PRODUCTOS ================= -->
+    <main class="contenedor-productos" id="contenedor-productos">
+
+
+        <!-- PRODUCTO 1: SAMSUNG -->
+        <article
+            class="producto"
+            data-nombre="Samsung 990 PRO NVMe 1TB"
+            data-marca="Samsung"
+            data-nivel="premium"
+        >
+
+            <img
+                src="https://cdn.a2zmegastore.com/storage/products/Internal-Storage-SSD---HDD/2026/01/49641/MZ-V9P1T0BW_58489270936103_1.webp"
+                alt="SSD Samsung 990 PRO NVMe de 1TB"
+                loading="lazy"
+            >
+
+            <div class="datos">
+
+                <span class="marca-producto">Samsung</span>
+
+                <h3>990 PRO NVMe 1TB</h3>
+
+                <span class="nivel premium">Premium</span>
+
+                <p class="descripcion">
+                    SSD M.2 NVMe de alto rendimiento.
+                </p>
+
+                <p class="precio">Bs. 1.250</p>
+
+                <button
+                    class="agregar-carrito"
+                    data-nombre="Samsung 990 PRO NVMe 1TB"
+                    data-precio="1250"
+                >
+                    Añadir al carrito
+                </button>
+
+            </div>
+        </article>
+
+
+        <!-- PRODUCTO 2: CRUCIAL P3 PLUS -->
+        <article
+            class="producto"
+            data-nombre="Crucial P3 Plus NVMe 1TB"
+            data-marca="Crucial"
+            data-nivel="alta"
+        >
+
+            <img
+                src="https://cdn.cs.1worldsync.com/syndication/mediaserverredirect/a21512087877f9ccf8df80d011e8a4aa/original.png"
+                alt="SSD Crucial P3 Plus NVMe"
+                loading="lazy"
+            >
+
+            <div class="datos">
+
+                <span class="marca-producto">Crucial</span>
+
+                <h3>P3 Plus NVMe 1TB</h3>
+
+                <span class="nivel alta">Alta</span>
+
+                <p class="descripcion">
+                    SSD M.2 PCIe 4.0 para uso diario y gaming.
+                </p>
+
+                <p class="precio">Bs. 780</p>
+
+                <button
+                    class="agregar-carrito"
+                    data-nombre="Crucial P3 Plus NVMe 1TB"
+                    data-precio="780"
+                >
+                    Añadir al carrito
+                </button>
+
+            </div>
+        </article>
+
+
+        <!-- PRODUCTO 3: WD BLUE SN580 -->
+        <article
+            class="producto"
+            data-nombre="WD Blue SN580 NVMe 1TB"
+            data-marca="Western Digital"
+            data-nivel="alta"
+        >
+
+            <img
+                src="https://images.price.tools/images/western-digital-1tb-wd-blue-sn580-l-tVH9wjB74.jpg"
+                alt="SSD WD Blue SN580 NVMe de 1TB"
+                loading="lazy"
+            >
+
+            <div class="datos">
+
+                <span class="marca-producto">Western Digital</span>
+
+                <h3>WD Blue SN580 1TB</h3>
+
+                <span class="nivel alta">Alta</span>
+
+                <p class="descripcion">
+                    SSD NVMe PCIe 4.0 para computadoras modernas.
+                </p>
+
+                <p class="precio">Bs. 820</p>
+
+                <button
+                    class="agregar-carrito"
+                    data-nombre="WD Blue SN580 NVMe 1TB"
+                    data-precio="820"
+                >
+                    Añadir al carrito
+                </button>
+
+            </div>
+        </article>
+
+
+        <!-- PRODUCTO 4: KINGSTON A400 -->
+        <article
+            class="producto"
+            data-nombre="Kingston A400 SSD 480GB"
+            data-marca="Kingston"
+            data-nivel="media"
+        >
+
+            <img
+                src="imagenes/tn.jpg"
+                alt="SSD Kingston A400 de 480GB"
+                loading="lazy"
+            >
+
+            <div class="datos">
+
+                <span class="marca-producto">Kingston</span>
+
+                <h3>A400 SSD 480GB</h3>
+
+                <span class="nivel media">Media</span>
+
+                <p class="descripcion">
+                    SSD SATA para mejorar el arranque del sistema.
+                </p>
+
+                <p class="precio">Bs. 390</p>
+
+                <button
+                    class="agregar-carrito"
+                    data-nombre="Kingston A400 SSD 480GB"
+                    data-precio="390"
+                >
+                    Añadir al carrito
+                </button>
+
+            </div>
+        </article>
+
+
+        <!-- PRODUCTO 5: CRUCIAL MX500 -->
+        <article
+            class="producto"
+            data-nombre="Crucial MX500 SSD 1TB"
+            data-marca="Crucial"
+            data-nivel="alta"
+        >
+
+            <img
+                src="https://gzhls.at/pix/65/d5/65d534d0ffc35ecb-l.webp"
+                alt="SSD Crucial MX500 de 1TB"
+                loading="lazy"
+            >
+
+            <div class="datos">
+
+                <span class="marca-producto">Crucial</span>
+
+                <h3>MX500 SSD 1TB</h3>
+
+                <span class="nivel alta">Alta</span>
+
+                <p class="descripcion">
+                    SSD SATA de 2.5 pulgadas para PC y laptop.
+                </p>
+
+                <p class="precio">Bs. 720</p>
+
+                <button
+                    class="agregar-carrito"
+                    data-nombre="Crucial MX500 SSD 1TB"
+                    data-precio="720"
+                >
+                    Añadir al carrito
+                </button>
+
+            </div>
+        </article>
+
+
+        <!-- PRODUCTO 6: SEAGATE BARRACUDA -->
+        <article
+            class="producto"
+            data-nombre="Seagate Barracuda HDD 2TB"
+            data-marca="Seagate"
+            data-nivel="media"
+        >
+
+            <img
+                src="https://phucanhcdn.com/media/product/33744______c____ng_seagate_barracuda_2tb_7200rpm_sata3_256mb_5.jpg"
+                alt="Disco duro Seagate Barracuda de 2TB"
+                loading="lazy"
+            >
+
+            <div class="datos">
+
+                <span class="marca-producto">Seagate</span>
+
+                <h3>Barracuda HDD 2TB</h3>
+
+                <span class="nivel media">Media</span>
+
+                <p class="descripcion">
+                    Disco duro interno para guardar archivos.
+                </p>
+
+                <p class="precio">Bs. 590</p>
+
+                <button
+                    class="agregar-carrito"
+                    data-nombre="Seagate Barracuda HDD 2TB"
+                    data-precio="590"
+                >
+                    Añadir al carrito
+                </button>
+
+            </div>
+        </article>
+
+
+        <!-- PRODUCTO 7: WD BLUE HDD -->
+        <article
+            class="producto"
+            data-nombre="WD Blue HDD 1TB"
+            data-marca="Western Digital"
+            data-nivel="basica"
+        >
+
+            <img
+                src="https://bizweb.dktcdn.net/thumb/grande/100/329/122/products/hdd-wd-blue-1tb-3-5-inch-sata-iii-64mb-cache-7200rpm-wd10ezex.png?v=1641197699157"
+                alt="Disco duro WD Blue de 1TB"
+                loading="lazy"
+            >
+
+            <div class="datos">
+
+                <span class="marca-producto">Western Digital</span>
+
+                <h3>WD Blue HDD 1TB</h3>
+
+                <span class="nivel basica">Básica</span>
+
+                <p class="descripcion">
+                    Almacenamiento interno económico.
+                </p>
+
+                <p class="precio">Bs. 450</p>
+
+                <button
+                    class="agregar-carrito"
+                    data-nombre="WD Blue HDD 1TB"
+                    data-precio="450"
+                >
+                    Añadir al carrito
+                </button>
+
+            </div>
+        </article>
+
+
+        <!-- PRODUCTO 8: SANDISK ULTRA FIT -->
+        <article
+            class="producto"
+            data-nombre="SanDisk Ultra Fit USB 128GB"
+            data-marca="SanDisk"
+            data-nivel="basica"
+        >
+
+            <img
+                src="https://upload.wikimedia.org/wikipedia/commons/1/1b/SanDisk_Ultra_Fit_128GB_%28Front%29.jpg"
+                alt="Memoria USB SanDisk Ultra Fit de 128GB"
+                loading="lazy"
+            >
+
+            <div class="datos">
+
+                <span class="marca-producto">SanDisk</span>
+
+                <h3>Ultra Fit USB 128GB</h3>
+
+                <span class="nivel basica">Básica</span>
+
+                <p class="descripcion">
+                    Memoria USB compacta para documentos y archivos.
+                </p>
+
+                <p class="precio">Bs. 160</p>
+
+                <button
+                    class="agregar-carrito"
+                    data-nombre="SanDisk Ultra Fit USB 128GB"
+                    data-precio="160"
+                >
+                    Añadir al carrito
+                </button>
+
+            </div>
+        </article>
+
+
+        <!-- PRODUCTO 9: WD ELEMENTS -->
+        <article
+            class="producto"
+            data-nombre="WD Elements externo 2TB"
+            data-marca="Western Digital"
+            data-nivel="media"
+        >
+
+            <img
+                src="https://files.pccasegear.com/images/WDBU6Y0020BBK-WESN-add1.jpg"
+                alt="Disco externo WD Elements de 2TB"
+                loading="lazy"
+            >
+
+            <div class="datos">
+
+                <span class="marca-producto">Western Digital</span>
+
+                <h3>WD Elements externo 2TB</h3>
+
+                <span class="nivel media">Media</span>
+
+                <p class="descripcion">
+                    Disco portátil USB para respaldos y archivos.
+                </p>
+
+                <p class="precio">Bs. 650</p>
+
+                <button
+                    class="agregar-carrito"
+                    data-nombre="WD Elements externo 2TB"
+                    data-precio="650"
+                >
+                    Añadir al carrito
+                </button>
+
+            </div>
+        </article>
+
+
+        <!-- PRODUCTO 10: SANDISK EXTREME -->
+        <article
+            class="producto"
+            data-nombre="SanDisk Extreme Portable SSD 1TB"
+            data-marca="SanDisk"
+            data-nivel="premium"
+        >
+
+            
+<img
+    src="https://commons.wikimedia.org/wiki/Special:FilePath/Sandisk_extreme_portable_ssd.jpg"
+    alt="SSD portátil SanDisk Extreme de 1TB"
+    loading="lazy"
+>
+
+
+            <div class="datos">
+
+                <span class="marca-producto">SanDisk</span>
+
+                <h3>Extreme Portable SSD 1TB</h3>
+
+                <span class="nivel premium">Premium</span>
+
+                <p class="descripcion">
+                    SSD externo portátil de alta velocidad.
+                </p>
+
+                <p class="precio">Bs. 1.050</p>
+
+                <button
+                    class="agregar-carrito"
+                    data-nombre="SanDisk Extreme Portable SSD 1TB"
+                    data-precio="1050"
+                >
+                    Añadir al carrito
+                </button>
+
+            </div>
+        </article>
+
+    </main>
+
+
+    <!-- ================= PIE DE PÁGINA ================= -->
+    <footer class="pie-pagina">
+
+        <h3>KANTUBYTE</h3>
+
+        <p>Tecnología que conecta posibilidades.</p>
+
+        <p>© 2026 Kantubyte</p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="almacenamiento.js"></script>
+
+</body>
+</html>

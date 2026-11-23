@@ -1,0 +1,393 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herramientas y mantenimiento | Kantubyte</title>
+    <link rel="stylesheet" href="herramientas.css">
+</head>
+
+<body>
+
+<header class="encabezado">
+    <div class="marca">
+        <img src="imagenes/logo-kantubyte-transparente.jpg"
+             alt="Logo Kantubyte">
+        <h1>KANTUBYTE</h1>
+    </div>
+
+    <nav class="navegacion">
+        <a href="index.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="interiores.html">Interiores</a>
+        <a href="carrito.html">Carrito</a>
+    </nav>
+</header>
+
+<section class="portada">
+    <p class="etiqueta-portada">KANTUBYTE · INTERIORES</p>
+    <h2>Herramientas y mantenimiento</h2>
+    <p>Todo lo necesario para cuidar, limpiar y mantener tu equipo.</p>
+</section>
+
+<section class="filtros">
+    <input type="text" id="buscador"
+           placeholder="Buscar herramienta o marca..."
+           autocomplete="off">
+
+    <select id="filtro-nivel">
+        <option value="todos">Todos los niveles</option>
+        <option value="basica">Básica</option>
+        <option value="media">Media</option>
+        <option value="alta">Alta</option>
+        <option value="premium">Premium</option>
+    </select>
+
+    <p class="contador">
+        Mostrando <span id="contador-productos">15</span> productos
+    </p>
+</section>
+
+<main class="contenedor-productos" id="contenedor-productos">
+
+    <!-- 1 -->
+    <article class="producto"
+        data-nombre="Kit de destornilladores de precisión"
+        data-marca="Pro Tools"
+        data-nivel="media">
+
+        <img src="https://c1.neweggimages.com/productimage/nb640/VAMDD2304270FCGFE56.jpg"
+             alt="Kit de destornilladores de precisión"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Pro Tools</span>
+            <h3>Kit de destornilladores de precisión</h3>
+            <span class="nivel media">Media</span>
+            <p class="descripcion">Juego de puntas para trabajos de reparación electrónica.</p>
+            <p class="precio">Bs. 180</p>
+            <button class="agregar-carrito"
+                data-nombre="Kit de destornilladores de precisión"
+                data-precio="180">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 2 -->
+    <article class="producto"
+        data-nombre="Pulsera antiestática ESD"
+        data-marca="Genérica"
+        data-nivel="basica">
+
+        <img src="imagenes/pu.jpg"
+             alt="Pulsera antiestática para mantenimiento"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Genérica</span>
+            <h3>Pulsera antiestática ESD</h3>
+            <span class="nivel basica">Básica</span>
+            <p class="descripcion">Accesorio de protección contra descargas electrostáticas.</p>
+            <p class="precio">Bs. 45</p>
+            <button class="agregar-carrito"
+                data-nombre="Pulsera antiestática ESD"
+                data-precio="45">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 3 -->
+    <article class="producto"
+        data-nombre="Pasta térmica Arctic MX-4"
+        data-marca="Arctic"
+        data-nivel="media">
+
+        <img src="https://cart-products.cdn.ifixit.com/cart-products/EcuGgU2pGBPrMnUi.large"
+             alt="Pasta térmica para procesador"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Arctic / iFixit</span>
+            <h3>Pasta térmica</h3>
+            <span class="nivel media">Media</span>
+            <p class="descripcion">Compuesto térmico para mantenimiento de CPU.</p>
+            <p class="precio">Bs. 95</p>
+            <button class="agregar-carrito"
+                data-nombre="Pasta térmica Arctic MX-4"
+                data-precio="95">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 4 -->
+    <article class="producto"
+        data-nombre="Tapete de reparación antiestático"
+        data-marca="Techrebal"
+        data-nivel="alta">
+
+        <img src="https://images.morele.net/i1064/15071572_0_i1064.jpg"
+             alt="Tapete de reparación con compartimentos"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Techrebal</span>
+            <h3>Tapete de reparación ESD</h3>
+            <span class="nivel alta">Alta</span>
+            <p class="descripcion">Superficie de trabajo con espacios para organizar piezas.</p>
+            <p class="precio">Bs. 220</p>
+            <button class="agregar-carrito"
+                data-nombre="Tapete de reparación antiestático"
+                data-precio="220">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 5 -->
+    <article class="producto"
+        data-nombre="Kit de limpieza para computadora"
+        data-marca="Skulltrap"
+        data-nivel="media">
+
+        <img src="https://http2.mlstatic.com/D_NQ_NP_698982-MLM107265736820_032026-O.webp"
+             alt="Kit de limpieza para computadora"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Skulltrap</span>
+            <h3>Kit de limpieza para PC</h3>
+            <span class="nivel media">Media</span>
+            <p class="descripcion">Conjunto de accesorios para limpieza y mantenimiento.</p>
+            <p class="precio">Bs. 160</p>
+            <button class="agregar-carrito"
+                data-nombre="Kit de limpieza para computadora"
+                data-precio="160">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 6 -->
+    <article class="producto"
+        data-nombre="Aerosol removedor de polvo"
+        data-marca="ABRO"
+        data-nivel="media">
+
+        <img src="https://ediselts.com/cdn/shop/products/D_610799-MPE51990831794_102022-B.jpg?v=1674586191"
+             alt="Aerosol para retirar polvo de equipos"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">ABRO</span>
+            <h3>Removedor de polvo</h3>
+            <span class="nivel media">Media</span>
+            <p class="descripcion">Aerosol para limpieza de superficies y equipos.</p>
+            <p class="precio">Bs. 75</p>
+            <button class="agregar-carrito"
+                data-nombre="Aerosol removedor de polvo"
+                data-precio="75">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 7 -->
+    <article class="producto"
+        data-nombre="Juego de herramientas electrónicas 90 piezas"
+        data-marca="Lofixo"
+        data-nivel="alta">
+<img src="imagenes/kit.jpg"
+             alt="Juego de herramientas electrónicas"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Lofixo</span>
+            <h3>Kit electrónico 90 piezas</h3>
+            <span class="nivel alta">Alta</span>
+            <p class="descripcion">Herramientas variadas para desmontaje y reparación.</p>
+            <p class="precio">Bs. 260</p>
+            <button class="agregar-carrito"
+                data-nombre="Juego de herramientas electrónicas 90 piezas"
+                data-precio="260">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 8 -->
+    <article class="producto"
+        data-nombre="Juego de pinzas de precisión"
+        data-marca="Unitronic"
+        data-nivel="media">
+
+        <img src="https://unitronic-online.com/web/image/product.product/32428/image_1024/Kit%20Intermedio%20De%20Herramientas%20Para%20Electr%C3%B3nica?unique=feff92e"
+             alt="Pinzas y herramientas de electrónica"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Unitronic</span>
+            <h3>Pinzas de precisión</h3>
+            <span class="nivel media">Media</span>
+            <p class="descripcion">Pinzas para manipular piezas pequeñas.</p>
+            <p class="precio">Bs. 65</p>
+            <button class="agregar-carrito"
+                data-nombre="Juego de pinzas de precisión"
+                data-precio="65">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 9 -->
+    <article class="producto"
+        data-nombre="Multímetro digital"
+        data-marca="UNI-T"
+        data-nivel="alta">
+
+        <img src="https://unitronic-online.com/web/image/product.product/32428/image_1024/Kit%20Intermedio%20De%20Herramientas%20Para%20Electr%C3%B3nica?unique=feff92e"
+             alt="Multímetro digital de electrónica"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">UNI-T</span>
+            <h3>Multímetro digital</h3>
+            <span class="nivel alta">Alta</span>
+            <p class="descripcion">Instrumento para mediciones eléctricas básicas.</p>
+            <p class="precio">Bs. 240</p>
+            <button class="agregar-carrito"
+                data-nombre="Multímetro digital"
+                data-precio="240">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 10 -->
+    <article class="producto"
+        data-nombre="Kit de herramientas Proskit"
+        data-marca="Proskit"
+        data-nivel="premium">
+
+        <img src="https://canada.newark.com/productimages/large/en_GB/3897627-40.jpg"
+             alt="Kit de herramientas Proskit"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Proskit</span>
+            <h3>Kit de herramientas electrónico</h3>
+            <span class="nivel premium">Premium</span>
+            <p class="descripcion">Estuche organizado con herramientas de mantenimiento.</p>
+            <p class="precio">Bs. 580</p>
+            <button class="agregar-carrito"
+                data-nombre="Kit de herramientas Proskit"
+                data-precio="580">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 11 -->
+    <article class="producto"
+        data-nombre="Brochas antiestáticas"
+        data-marca="Genérica"
+        data-nivel="basica">
+
+        <img src="https://cdn.awsli.com.br/2500x2500/264/264064/produto/382597239/ef00402-sgz7rgcutk.jpg"
+             alt="Brochas para limpieza electrónica"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Genérica</span>
+            <h3>Brochas antiestáticas</h3>
+            <span class="nivel basica">Básica</span>
+            <p class="descripcion">Brochas para retirar polvo de zonas accesibles.</p>
+            <p class="precio">Bs. 50</p>
+            <button class="agregar-carrito"
+                data-nombre="Brochas antiestáticas"
+                data-precio="50">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 12 -->
+    <article class="producto"
+        data-nombre="Paño de microfibra"
+        data-marca="Genérica"
+        data-nivel="basica">
+
+        <img src="https://http2.mlstatic.com/D_NQ_NP_820364-MLA74825426782_032024-O.webp"
+             alt="Paño de microfibra para limpieza"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Genérica</span>
+            <h3>Paño de microfibra</h3>
+            <span class="nivel basica">Básica</span>
+            <p class="descripcion">Paño suave para superficies y accesorios.</p>
+            <p class="precio">Bs. 25</p>
+            <button class="agregar-carrito"
+                data-nombre="Paño de microfibra"
+                data-precio="25">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 13 -->
+    <article class="producto"
+        data-nombre="Organizador magnético de tornillos"
+        data-marca="Techrebal"
+        data-nivel="media">
+
+        <img src="https://images.morele.net/i1064/15071572_0_i1064.jpg"
+             alt="Organizador de piezas y tornillos"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Techrebal</span>
+            <h3>Organizador de tornillos</h3>
+            <span class="nivel media">Media</span>
+            <p class="descripcion">Compartimentos para mantener piezas ordenadas.</p>
+            <p class="precio">Bs. 85</p>
+            <button class="agregar-carrito"
+                data-nombre="Organizador magnético de tornillos"
+                data-precio="85">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 14 -->
+    <article class="producto"
+        data-nombre="Kit de limpieza antiestática"
+        data-marca="Eletrônica Fácil"
+        data-nivel="alta">
+
+        <img src="https://cdn.awsli.com.br/2500x2500/264/264064/produto/382597239/ef00402-sgz7rgcutk.jpg"
+             alt="Kit de limpieza antiestática"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Eletrônica Fácil</span>
+            <h3>Kit de limpieza antiestática</h3>
+            <span class="nivel alta">Alta</span>
+            <p class="descripcion">Tapete, cepillos y accesorios de limpieza.</p>
+            <p class="precio">Bs. 310</p>
+            <button class="agregar-carrito"
+                data-nombre="Kit de limpieza antiestática"
+                data-precio="310">Añadir al carrito</button>
+        </div>
+    </article>
+
+    <!-- 15 -->
+    <article class="producto"
+        data-nombre="Kit de mantenimiento para PC"
+        data-marca="Genérico"
+        data-nivel="premium">
+
+        <img src="https://guide-images.cdn.ifixit.com/igi/WVIoVEpCSFwhAAva.full"
+             alt="Kit de mantenimiento de computadora"
+             loading="lazy">
+
+        <div class="datos">
+            <span class="marca-producto">Genérico</span>
+            <h3>Kit completo de mantenimiento</h3>
+            <span class="nivel premium">Premium</span>
+            <p class="descripcion">Conjunto variado para limpieza y reparación de equipos.</p>
+            <p class="precio">Bs. 420</p>
+            <button class="agregar-carrito"
+                data-nombre="Kit de mantenimiento para PC"
+                data-precio="420">Añadir al carrito</button>
+        </div>
+    </article>
+
+</main>
+
+<footer class="pie-pagina">
+    <h3>KANTUBYTE</h3>
+    <p>Tecnología que conecta posibilidades.</p>
+    <p>© 2026 Kantubyte</p>
+</footer>
+
+<script src="herramientas.js"></script>
+</body>
+</html>

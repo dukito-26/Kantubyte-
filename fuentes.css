@@ -1,0 +1,275 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #11151D;
+    color: #E9E7E2;
+}
+
+.encabezado {
+    background: #171B24;
+    border-bottom: 3px solid #8E172B;
+    padding: 25px 15px 0;
+}
+
+.marca {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 25px;
+}
+
+.marca img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+.marca h1 {
+    color: #D6A84B;
+    font-size: 38px;
+    letter-spacing: 3px;
+}
+
+.navegacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    padding: 15px 5px 25px;
+}
+
+.navegacion a {
+    color: #E9E7E2;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navegacion a:hover {
+    color: #D6A84B;
+}
+
+.portada {
+    text-align: center;
+    padding: 100px 20px;
+    background: radial-gradient(
+        circle at center,
+        #291923 0%,
+        #17151D 55%,
+        #11151D 100%
+    );
+    border-bottom: 1px solid #8E172B;
+}
+
+.etiqueta-portada {
+    color: #D6A84B;
+    letter-spacing: 5px;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.portada h2 {
+    font-size: 58px;
+    margin-bottom: 25px;
+}
+
+.portada > p:last-child {
+    color: #C5C5C5;
+    font-size: 23px;
+    max-width: 650px;
+    margin: auto;
+    line-height: 1.5;
+}
+
+.filtros {
+    padding: 55px 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#buscador,
+#filtro-nivel {
+    width: 100%;
+    padding: 20px;
+    background: #171B24;
+    border: 1px solid #68404D;
+    border-radius: 12px;
+    color: #E9E7E2;
+    font-size: 18px;
+    outline: none;
+}
+
+#buscador:focus,
+#filtro-nivel:focus {
+    border-color: #D6A84B;
+}
+
+#filtro-nivel option {
+    background: #171B24;
+    color: #E9E7E2;
+}
+
+.contador {
+    color: #D6A84B;
+    font-size: 18px;
+}
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(260px, 1fr)
+    );
+    gap: 30px;
+    padding: 0 5% 70px;
+}
+
+.producto {
+    background: #F1F0ED;
+    color: #171B24;
+    border-radius: 22px;
+    overflow: hidden;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px #00000055;
+}
+
+.producto img {
+    width: 100%;
+    height: 230px;
+    object-fit: contain;
+    background: #FFFFFF;
+    border-radius: 12px;
+    padding: 12px;
+    display: block;
+}
+
+.datos {
+    padding: 20px 5px 5px;
+}
+
+.marca-producto {
+    color: #8E172B;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.datos h3 {
+    font-size: 21px;
+    margin: 12px 0;
+}
+
+.nivel {
+    display: inline-block;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    background: #E5D7B6;
+    color: #5D4310;
+}
+
+.descripcion {
+    color: #555555;
+    line-height: 1.5;
+    margin: 15px 0;
+    min-height: 45px;
+}
+
+.precio {
+    color: #8E172B;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 18px 0;
+}
+
+.agregar-carrito {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #8E172B;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.agregar-carrito:hover {
+    background: #B82036;
+}
+
+.agregar-carrito.agregado {
+    background: #218838;
+    color: white;
+}
+
+.pie-pagina {
+    text-align: center;
+    padding: 40px 20px;
+    background: #171B24;
+    border-top: 2px solid #8E172B;
+    color: #BDBDBD;
+}
+
+.pie-pagina h3 {
+    color: #D6A84B;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+
+.pie-pagina p {
+    margin: 10px 0;
+}
+
+@media (max-width: 600px) {
+    .marca img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .marca h1 {
+        font-size: 28px;
+        letter-spacing: 2px;
+    }
+
+    .navegacion {
+        gap: 22px;
+    }
+
+    .navegacion a {
+        font-size: 17px;
+    }
+
+    .portada {
+        padding: 75px 18px;
+    }
+
+    .portada h2 {
+        font-size: 42px;
+    }
+
+    .portada > p:last-child {
+        font-size: 19px;
+    }
+
+    .contenedor-productos {
+        grid-template-columns: 1fr;
+    }
+}

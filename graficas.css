@@ -1,0 +1,258 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #11151D;
+    color: #E9E7E2;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 6%;
+    background: #171B24;
+    border-bottom: 1px solid #B82036;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.logo img {
+    width: 115px;
+    max-width: 100%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    color: #E9E7E2;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.activo {
+    color: #D6A84B;
+}
+
+.presentacion {
+    text-align: center;
+    padding: 55px 20px 35px;
+}
+
+.subtitulo {
+    color: #D6A84B;
+    letter-spacing: 3px;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.presentacion h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.presentacion p {
+    color: #B8BCC7;
+    line-height: 1.6;
+}
+
+.controles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.controles input,
+.controles select {
+    background: #1B202B;
+    color: #E9E7E2;
+    border: 1px solid #393F4D;
+    border-radius: 8px;
+    padding: 13px 15px;
+    font-size: 14px;
+    outline: none;
+}
+
+.controles input {
+    width: 320px;
+    max-width: 100%;
+}
+
+.controles input:focus,
+.controles select:focus {
+    border-color: #D6A84B;
+}
+
+#contador-productos {
+    text-align: center;
+    color: #B8BCC7;
+    margin: 15px 0 25px;
+}
+
+.productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+    padding: 25px 6% 60px;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    background: #1B202B;
+    border: 1px solid #303644;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-6px);
+    border-color: #B82036;
+}
+
+.producto img {
+    width: 100%;
+    height: 190px;
+    object-fit: contain;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.marca-producto {
+    color: #D6A84B;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.producto h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.nivel {
+    color: #B8BCC7;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.descripcion {
+    color: #B8BCC7;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.precio {
+    color: #D6A84B;
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: 15px;
+}
+
+.agregar-carrito {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #B82036;
+    color: #FFFFFF;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.agregar-carrito:hover {
+    background: #8E172B;
+}
+
+.agregar-carrito.agregado {
+    background: #168A4A;
+}
+
+.agregar-carrito:disabled {
+    cursor: default;
+}
+
+footer {
+    background: #171B24;
+    border-top: 1px solid #B82036;
+    padding: 35px 6%;
+    text-align: center;
+}
+
+.footer-contenido h2 {
+    color: #D6A84B;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.footer-contenido p {
+    color: #B8BCC7;
+    margin-bottom: 15px;
+}
+
+.footer-enlaces {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.footer-enlaces a {
+    color: #E9E7E2;
+    text-decoration: none;
+}
+
+.footer-enlaces a:hover {
+    color: #D6A84B;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+@media (max-width: 600px) {
+    header {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .presentacion h1 {
+        font-size: 30px;
+    }
+
+    .productos {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .producto img {
+        height: 210px;
+    }
+}

@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teclados | Kantubyte</title>
+    <link rel="stylesheet" href="teclados.css">
+</head>
+<body>
+
+<header class="encabezado">
+    <div class="marca">
+        <img src="imagenes/logo-kantubyte-transparente.jpg" alt="Kantubyte">
+        <h2>KANTUBYTE</h2>
+    </div>
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+</header>
+
+<main>
+    <section class="portada">
+        <span>PERIFÉRICOS / EXTERIORES</span>
+        <h1>Teclados</h1>
+        <p>Encuentra el teclado ideal para tu espacio de trabajo o juego.</p>
+    </section>
+
+    <section class="productos">
+        <div class="titulo-seccion">
+            <h2>Nuestros teclados</h2>
+            <p>Explora nuestros 25 modelos disponibles.</p>
+        </div>
+
+        <div class="filtros">
+            <input type="search" id="buscador"
+                placeholder="Buscar teclado o marca...">
+
+            <select id="filtroNivel">
+                <option value="todos">Todos los niveles</option>
+                <option value="Básica">Básica</option>
+                <option value="Media">Media</option>
+                <option value="Alta">Alta</option>
+                <option value="Premium">Premium</option>
+            </select>
+        </div>
+
+        <div class="contenedor-productos" id="listaProductos">
+
+            <article class="producto" data-nivel="Básica">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Logitech%20K120.png" alt="Logitech K120">
+                <div class="datos">
+                    <span class="marca-producto">Logitech</span>
+                    <h3>K120</h3>
+                    <p>Teclado de membrana con conexión USB.</p>
+                    <strong>Bs 95</strong>
+                    <span class="nivel">Básica</span>
+                    <button class="agregar-carrito" data-precio="95">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Media">
+                <img src="https://specs.gg/assets/img/gear/keyboard/REDRAGON%20KUMARA.png" alt="Redragon Kumara">
+                <div class="datos">
+                    <span class="marca-producto">Redragon</span>
+                    <h3>Kumara K552</h3>
+                    <p>Mecánico compacto con iluminación.</p>
+                    <strong>Bs 350</strong>
+                    <span class="nivel">Media</span>
+                    <button class="agregar-carrito" data-precio="350">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Alta">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Razer%20BlackWidow%20V4%2075.png" alt="Razer BlackWidow V4 75">
+                <div class="datos">
+                    <span class="marca-producto">Razer</span>
+                    <h3>BlackWidow V4 75</h3>
+                    <p>Teclado mecánico compacto para gaming.</p>
+                    <strong>Bs 1.150</strong>
+                    <span class="nivel">Alta</span>
+                    <button class="agregar-carrito" data-precio="1150">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Premium">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Corsair%20K100.png" alt="Corsair K100">
+                <div class="datos">
+                    <span class="marca-producto">Corsair</span>
+                    <h3>K100 RGB</h3>
+                    <p>Teclado avanzado con controles multimedia.</p>
+                    <strong>Bs 2.100</strong>
+                    <span class="nivel">Premium</span>
+                    <button class="agregar-carrito" data-precio="2100">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Alta">
+                <img src="https://specs.gg/assets/img/gear/keyboard/HyperX%20Alloy%20Origins.png" alt="HyperX Alloy Origins">
+                <div class="datos">
+                    <span class="marca-producto">HyperX</span>
+                    <h3>Alloy Origins</h3>
+                    <p>Mecánico con estructura resistente.</p>
+                    <strong>Bs 850</strong>
+                    <span class="nivel">Alta</span>
+                    <button class="agregar-carrito" data-precio="850">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Alta">
+                <img src="https://specs.gg/assets/img/gear/keyboard/SteelSeries%20Apex%20Pro.png" alt="SteelSeries Apex Pro">
+                <div class="datos">
+                    <span class="marca-producto">SteelSeries</span>
+                    <h3>Apex Pro</h3>
+                    <p>Teclado de alto rendimiento para gaming.</p>
+                    <strong>Bs 1.700</strong>
+                    <span class="nivel">Alta</span>
+                    <button class="agregar-carrito" data-precio="1700">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Alta">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Keychron%20K6%20PRO.png" alt="Keychron K6 Pro">
+                <div class="datos">
+                    <span class="marca-producto">Keychron</span>
+                    <h3>K6 Pro</h3>
+                    <p>Mecánico inalámbrico de formato compacto.</p>
+                    <strong>Bs 650</strong>
+                    <span class="nivel">Alta</span>
+                    <button class="agregar-carrito" data-precio="650">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Básica">
+                <img src="https://specs.gg/assets/img/gear/keyboard/DELL%20KB216.png" alt="Dell KB216">
+                <div class="datos">
+                    <span class="marca-producto">Dell</span>
+                    <h3>KB216</h3>
+                    <p>Teclado multimedia para uso cotidiano.</p>
+                    <strong>Bs 100</strong>
+                    <span class="nivel">Básica</span>
+                    <button class="agregar-carrito" data-precio="100">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Premium">
+                <img src="https://specs.gg/assets/img/gear/keyboard/ASUS%20ROG%20Azoth%20Extreme.png" alt="ASUS ROG Azoth Extreme">
+                <div class="datos">
+                    <span class="marca-producto">ASUS</span>
+                    <h3>ROG Azoth Extreme</h3>
+                    <p>Mecánico inalámbrico de gama alta.</p>
+                    <strong>Bs 2.400</strong>
+                    <span class="nivel">Premium</span>
+                    <button class="agregar-carrito" data-precio="2400">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Media">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Anne%20Pro%202%20White.png" alt="Anne Pro 2 White">
+                <div class="datos">
+                    <span class="marca-producto">Anne Pro</span>
+                    <h3>Anne Pro 2</h3>
+                    <p>Teclado compacto inalámbrico de color blanco.</p>
+                    <strong>Bs 430</strong>
+                    <span class="nivel">Media</span>
+                    <button class="agregar-carrito" data-precio="430">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Media">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Cooler%20Master%20CK530%20V2.png" alt="Cooler Master CK530 V2">
+                <div class="datos">
+                    <span class="marca-producto">Cooler Master</span>
+                    <h3>CK530 V2</h3>
+                    <p>Mecánico TKL con iluminación RGB.</p>
+                    <strong>Bs 520</strong>
+                    <span class="nivel">Media</span>
+                    <button class="agregar-carrito" data-precio="520">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Básica">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Logitech%20G213.png" alt="Logitech G213">
+                <div class="datos">
+                    <span class="marca-producto">Logitech</span>
+                    <h3>G213 Prodigy</h3>
+                    <p>Teclado gaming de membrana con RGB.</p>
+                    <strong>Bs 390</strong>
+                    <span class="nivel">Básica</span>
+                    <button class="agregar-carrito" data-precio="390">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Alta">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Glorious%20GMMK.png" alt="Glorious GMMK">
+                <div class="datos">
+                    <span class="marca-producto">Glorious</span>
+                    <h3>GMMK</h3>
+                    <p>Mecánico modular y personalizable.</p>
+                    <strong>Bs 780</strong>
+                    <span class="nivel">Alta</span>
+                    <button class="agregar-carrito" data-precio="780">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Media">
+                <img src="https://specs.gg/assets/img/gear/keyboard/RK%20ROYAL%20KLUDGE%20RK61.png" alt="Royal Kludge RK61">
+                <div class="datos">
+                    <span class="marca-producto">Royal Kludge</span>
+                    <h3>RK61</h3>
+                    <p>Mecánico mini con conexión inalámbrica.</p>
+                    <strong>Bs 390</strong>
+                    <span class="nivel">Media</span>
+                    <button class="agregar-carrito" data-precio="390">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Media">
+                <img src="https://specs.gg/assets/img/gear/keyboard/AKKO%203108v2.png" alt="Akko 3108v2">
+                <div class="datos">
+                    <span class="marca-producto">Akko</span>
+                    <h3>3108v2</h3>
+                    <p>Teclado mecánico de tamaño completo.</p>
+                    <strong>Bs 570</strong>
+                    <span class="nivel">Media</span>
+                    <button class="agregar-carrito" data-precio="570">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Básica">
+                <img src="https://specs.gg/assets/img/gear/keyboard/ABKO%20K640.png" alt="ABKO K640">
+                <div class="datos">
+                    <span class="marca-producto">ABKO</span>
+                    <h3>K640</h3>
+                    <p>Teclado para juegos con diseño compacto.</p>
+                    <strong>Bs 300</strong>
+                    <span class="nivel">Básica</span>
+                    <button class="agregar-carrito" data-precio="300">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Media">
+                <img src="https://specs.gg/assets/img/gear/keyboard/EPOMAKER%20EP84.png" alt="Epomaker EP84">
+                <div class="datos">
+                    <span class="marca-producto">Epomaker</span>
+                    <h3>EP84</h3>
+                    <p>Mecánico compacto con distribución 75%.</p>
+                    <strong>Bs 620</strong>
+                    <span class="nivel">Media</span>
+                    <button class="agregar-carrito" data-precio="620">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Alta">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Ducky%20One%202%20Mini.png" alt="Ducky One 2 Mini">
+                <div class="datos">
+                    <span class="marca-producto">Ducky</span>
+                    <h3>One 2 Mini</h3>
+                    <p>Mecánico compacto con diseño minimalista.</p>
+                    <strong>Bs 820</strong>
+                    <span class="nivel">Alta</span>
+                    <button class="agregar-carrito" data-precio="820">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Media">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Fantech%20Atom%20MK874V2.png" alt="Fantech Atom MK874V2">
+                <div class="datos">
+                    <span class="marca-producto">Fantech</span>
+                    <h3>Atom MK874V2</h3>
+                    <p>Teclado compacto para gaming.</p>
+                    <strong>Bs 320</strong>
+                    <span class="nivel">Media</span>
+                    <button class="agregar-carrito" data-precio="320">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Alta">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Razer%20Huntsman%20Mini.png" alt="Razer Huntsman Mini">
+                <div class="datos">
+                    <span class="marca-producto">Razer</span>
+                    <h3>Huntsman Mini</h3>
+                    <p>Teclado óptico gaming de formato 60%.</p>
+                    <strong>Bs 890</strong>
+                    <span class="nivel">Alta</span>
+                    <button class="agregar-carrito" data-precio="890">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Media">
+                <img src="https://specs.gg/assets/img/gear/keyboard/AULA%20F87%20PRO%20White%20Blue.png" alt="Aula F87 Pro">
+                <div class="datos">
+                    <span class="marca-producto">Aula</span>
+                    <h3>F87 Pro</h3>
+                    <p>Mecánico inalámbrico de diseño moderno.</p>
+                    <strong>Bs 480</strong>
+                    <span class="nivel">Media</span>
+                    <button class="agregar-carrito" data-precio="480">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Media">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Corsair%20K55.png" alt="Corsair K55">
+                <div class="datos">
+                    <span class="marca-producto">Corsair</span>
+                    <h3>K55 RGB</h3>
+                    <p>Teclado de membrana con iluminación.</p>
+                    <strong>Bs 410</strong>
+                    <span class="nivel">Media</span>
+                    <button class="agregar-carrito" data-precio="410">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Premium">
+                <img src="https://specs.gg/assets/img/gear/keyboard/Logitech%20915.png" alt="Logitech G915">
+                <div class="datos">
+                    <span class="marca-producto">Logitech</span>
+                    <h3>G915</h3>
+                    <p>Mecánico inalámbrico de perfil bajo.</p>
+                    <strong>Bs 1.650</strong>
+                    <span class="nivel">Premium</span>
+                    <button class="agregar-carrito" data-precio="1650">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Alta">
+                <img src="https://specs.gg/assets/img/gear/keyboard/SteelSeries%20Apex%207.png" alt="SteelSeries Apex 7">
+                <div class="datos">
+                    <span class="marca-producto">SteelSeries</span>
+                    <h3>Apex 7</h3>
+                    <p>Mecánico con pantalla OLED y RGB.</p>
+                    <strong>Bs 1.100</strong>
+                    <span class="nivel">Alta</span>
+                    <button class="agregar-carrito" data-precio="1100">Agregar al carrito</button>
+                </div>
+            </article>
+
+            <article class="producto" data-nivel="Media">
+                <img src="https://specs.gg/assets/img/gear/keyboard/T-DAGGER%20Bora%20T-TGK315.png" alt="T-Dagger Bora">
+                <div class="datos">
+                    <span class="marca-producto">T-Dagger</span>
+                    <h3>Bora T-TGK315</h3>
+                    <p>Mecánico compacto con retroiluminación.</p>
+                    <strong>Bs 290</strong>
+                    <span class="nivel">Media</span>
+                    <button class="agregar-carrito" data-precio="290">Agregar al carrito</button>
+                </div>
+            </article>
+
+        </div>
+    </section>
+</main>
+
+<footer>
+    <h3>KANTUBYTE</h3>
+    <p>Tecnología que conecta posibilidades.</p>
+    <p>© 2026 Kantubyte. Todos los derechos reservados.</p>
+</footer>
+
+<script src="teclados.js"></script>
+</body>
+</html>

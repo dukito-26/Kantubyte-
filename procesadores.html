@@ -1,0 +1,383 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Procesadores | Kantubyte</title>
+    <link rel="stylesheet" href="procesadores.css">
+</head>
+
+<body>
+
+<header class="encabezado">
+    <a href="inicio.html" class="logo-contenedor">
+        <img src="imagenes/logo-kantubyte-transparente.jpg"
+             alt="Kantubyte"  class="logo">
+      <span>KANTUBYTE</span>
+    </a>
+
+  
+
+        <nav class="navegacion">
+            <a href="inicio.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="carrito.html">Carrito</a>
+            <a href="sobre-nosotros.html">Sobre nosotros</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </>
+</header>
+
+<main class="contenido">
+
+    <section class="presentacion">
+      
+
+        <span class="etiqueta-categoria">COMPONENTES INTERNOS</span>
+        <h1>Procesadores</h1>
+
+        <p>
+            El corazón de tu computadora.
+            Encuentra el procesador ideal para tu equipo.
+        </p>
+    </section>
+
+    <section class="controles">
+        <div class="control">
+            <label for="buscador">Buscar producto</label>
+            <input type="search" id="buscador-control"
+                   placeholder="Nombre o marca...">
+        </div>
+
+        <div class="control">
+            <label for="filtroNivel">Filtrar por nivel</label>
+            <select id="filtroNivel">
+                <option value="todos">Todos los niveles</option>
+                <option value="basica">Básica</option>
+                <option value="media">Media</option>
+                <option value="alta">Alta</option>
+                <option value="premium">Premium</option>
+            </select>
+        </div>
+    </section>
+
+    <div class="resultado">
+        <p id="contador-productos">15 procesadores disponibles</p>
+    </div>
+
+    <section class="productos" id="listaProductos">
+
+        <!-- 01 -->
+        <article class="producto" data-nivel="basica">
+            <div class="imagen-producto">
+                <img src="https://www.igorslab.de/wp-content/uploads/2020/11/Quartett-1.jpg"
+                     alt="Procesadores AMD Ryzen de referencia"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel basica">Básica</span>
+                <h2>AMD Ryzen 3 4100</h2>
+                <p class="marca-producto">AMD · Ryzen 3 · AM4</p>
+                <p class="descripcion">Para tareas cotidianas, estudio y equipos económicos.</p>
+                <p class="precio">Bs 480</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 3 4100"
+                        data-precio="480">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 02 -->
+        <article class="producto" data-nivel="basica">
+            <div class="imagen-producto">
+                <img src="https://www.igorslab.de/wp-content/uploads/2020/11/Quartett-1.jpg"
+                     alt="Procesadores AMD Ryzen de referencia"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel basica">Básica</span>
+                <h2>AMD Ryzen 5 4500</h2>
+                <p class="marca-producto">AMD · Ryzen 5 · AM4</p>
+                <p class="descripcion">Una opción accesible para uso general y juegos ligeros.</p>
+                <p class="precio">Bs 590</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 5 4500"
+                        data-precio="590">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 03 -->
+        <article class="producto" data-nivel="basica">
+            <div class="imagen-producto">
+                <img src="https://www.igorslab.de/wp-content/uploads/2020/11/Quartett-1.jpg"
+                     alt="Procesadores AMD Ryzen de referencia"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel basica">Básica</span>
+                <h2>AMD Ryzen 5 5500</h2>
+                <p class="marca-producto">AMD · Ryzen 5 · AM4</p>
+                <p class="descripcion">Buen equilibrio para una computadora económica.</p>
+                <p class="precio">Bs 650</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 5 5500"
+                        data-precio="650">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 04 -->
+        <article class="producto" data-nivel="basica">
+            <div class="imagen-producto">
+                <img src="https://aeromalls.com/cdn/shop/products/AMDRyzenwithgraphic02.jpg?v=1636596111"
+                     alt="Procesador AMD Ryzen con gráficos integrados"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel basica">Básica</span>
+                <h2>AMD Ryzen 5 5600G</h2>
+                <p class="marca-producto">AMD · Ryzen 5 · Radeon integrada</p>
+                <p class="descripcion">Incluye gráficos integrados para equipos sin GPU dedicada.</p>
+                <p class="precio">Bs 850</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 5 5600G"
+                        data-precio="850">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 05 -->
+        <article class="producto" data-nivel="media">
+            <div class="imagen-producto">
+                <img src="https://www.igorslab.de/wp-content/uploads/2020/11/Quartett-1.jpg"
+                     alt="Procesadores AMD Ryzen de referencia"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel media">Media</span>
+                <h2>AMD Ryzen 5 5600</h2>
+                <p class="marca-producto">AMD · Ryzen 5 · AM4</p>
+                <p class="descripcion">Rendimiento para multitarea, productividad y gaming.</p>
+                <p class="precio">Bs 950</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 5 5600"
+                        data-precio="950">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 06 -->
+        <article class="producto" data-nivel="media">
+            <div class="imagen-producto">
+                <img src="https://www.nikktech.com/main/images/pics/reviews/amd/ryzen_7600_7700_7900/ryzen_7600_ryzen_7700_ryzen_7900_review_2.jpg"
+                     alt="Procesadores AMD Ryzen serie 7000"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel media">Media</span>
+                <h2>AMD Ryzen 5 7500F</h2>
+                <p class="marca-producto">AMD · Ryzen 5 · AM5</p>
+                <p class="descripcion">Procesador moderno para gaming con tarjeta gráfica dedicada.</p>
+                <p class="precio">Bs 1.250</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 5 7500F"
+                        data-precio="1250">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 07 -->
+        <article class="producto" data-nivel="media">
+            <div class="imagen-producto">
+                <img src="https://www.nikktech.com/main/images/pics/reviews/amd/ryzen_7600_7700_7900/ryzen_7600_ryzen_7700_ryzen_7900_review_2.jpg"
+                     alt="Procesadores AMD Ryzen serie 7000"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel media">Media</span>
+                <h2>AMD Ryzen 5 7600</h2>
+                <p class="marca-producto">AMD · Ryzen 5 · AM5</p>
+                <p class="descripcion">Equilibrio entre potencia, eficiencia y actualización.</p>
+                <p class="precio">Bs 1.450</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 5 7600"
+                        data-precio="1450">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 08 -->
+        <article class="producto" data-nivel="media">
+            <div class="imagen-producto">
+                <img src="https://www.nikktech.com/main/images/pics/reviews/amd/ryzen_7600_7700_7900/ryzen_7600_ryzen_7700_ryzen_7900_review_2.jpg"
+                     alt="Procesadores AMD Ryzen serie 7000"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel media">Media</span>
+                <h2>AMD Ryzen 5 7600X</h2>
+                <p class="marca-producto">AMD · Ryzen 5 · AM5</p>
+                <p class="descripcion">Una opción potente para juegos y aplicaciones exigentes.</p>
+                <p class="precio">Bs 1.600</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 5 7600X"
+                        data-precio="1600">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 09 -->
+        <article class="producto" data-nivel="alta">
+            <div class="imagen-producto">
+                <img src="https://www.igorslab.de/wp-content/uploads/2020/11/Quartett-1.jpg"
+                     alt="Procesadores AMD Ryzen de referencia"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel alta">Alta</span>
+                <h2>AMD Ryzen 7 5700X</h2>
+                <p class="marca-producto">AMD · Ryzen 7 · AM4</p>
+                <p class="descripcion">Excelente para multitarea, edición y videojuegos.</p>
+                <p class="precio">Bs 1.450</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 7 5700X"
+                        data-precio="1450">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 10 -->
+        <article class="producto" data-nivel="alta">
+            <div class="imagen-producto">
+                <img src="https://www.igorslab.de/wp-content/uploads/2020/11/Quartett-1.jpg"
+                     alt="Procesadores AMD Ryzen de referencia"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel alta">Alta</span>
+                <h2>AMD Ryzen 7 5800X</h2>
+                <p class="marca-producto">AMD · Ryzen 7 · AM4</p>
+                <p class="descripcion">Potencia para creación de contenido y gaming.</p>
+                <p class="precio">Bs 1.650</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 7 5800X"
+                        data-precio="1650">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 11 -->
+        <article class="producto" data-nivel="alta">
+            <div class="imagen-producto">
+                <img src="https://www.nikktech.com/main/images/pics/reviews/amd/ryzen_7600_7700_7900/ryzen_7600_ryzen_7700_ryzen_7900_review_2.jpg"
+                     alt="Procesadores AMD Ryzen serie 7000"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel alta">Alta</span>
+                <h2>AMD Ryzen 7 7700</h2>
+                <p class="marca-producto">AMD · Ryzen 7 · AM5</p>
+                <p class="descripcion">Ideal para estaciones de trabajo y computadoras gaming.</p>
+                <p class="precio">Bs 2.050</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 7 7700"
+                        data-precio="2050">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 12 -->
+        <article class="producto" data-nivel="premium">
+            <div class="imagen-producto">
+                <img src="https://www.igorslab.de/wp-content/uploads/2020/11/Quartett-1.jpg"
+                     alt="Procesadores AMD Ryzen de referencia"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel premium">Premium</span>
+                <h2>AMD Ryzen 7 7800X3D</h2>
+                <p class="marca-producto">AMD · Ryzen 7 · 3D V-Cache</p>
+                <p class="descripcion">Procesador destacado para gaming de alto rendimiento.</p>
+                <p class="precio">Bs 3.200</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 7 7800X3D"
+                        data-precio="3200">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 13 -->
+        <article class="producto" data-nivel="alta">
+            <div class="imagen-producto">
+                <img src="https://imageio.forbes.com/specials-images/imageserve/66b27c5de13ba0d19276f8d2/0x0.jpg?crop=3068%2C1725%2Cx215%2Cy145%2Csafe&fit=bounds&format=jpg&height=600&width=1200"
+                     alt="Procesadores AMD Ryzen serie 9000"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel alta">Alta</span>
+                <h2>AMD Ryzen 7 9700X</h2>
+                <p class="marca-producto">AMD · Ryzen 7 · AM5</p>
+                <p class="descripcion">Nueva generación para productividad y gaming.</p>
+                <p class="precio">Bs 2.850</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 7 9700X"
+                        data-precio="2850">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 14 -->
+        <article class="producto" data-nivel="premium">
+            <div class="imagen-producto">
+                <img src="https://www.nikktech.com/main/images/pics/reviews/amd/ryzen_7600_7700_7900/ryzen_7600_ryzen_7700_ryzen_7900_review_2.jpg"
+                     alt="Procesadores AMD Ryzen serie 7000"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel premium">Premium</span>
+                <h2>AMD Ryzen 9 7900X</h2>
+                <p class="marca-producto">AMD · Ryzen 9 · AM5</p>
+                <p class="descripcion">Gran capacidad para edición y renderizado.</p>
+                <p class="precio">Bs 3.450</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 9 7900X"
+                        data-precio="3450">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <!-- 15 -->
+        <article class="producto" data-nivel="premium">
+            <div class="imagen-producto">
+                <img src="imagenes/procesador.jpg"
+                     alt="Procesadores AMD Ryzen serie 9000"
+                     loading="lazy">
+            </div>
+            <div class="datos">
+                <span class="nivel premium">Premium</span>
+                <h2>AMD Ryzen 9 9950X</h2>
+                <p class="marca-producto">AMD · Ryzen 9 · AM5</p>
+                <p class="descripcion">Procesador de alto nivel para tareas profesionales intensivas.</p>
+                <p class="precio">Bs 4.800</p>
+                <button class="agregar-carrito"
+                        data-nombre="AMD Ryzen 9 9950X"
+                        data-precio="4800">Añadir al carrito</button>
+            </div>
+        </article>
+
+    </section>
+
+    <p class="sin-resultados" id="sinResultados" hidden>
+        No se encontraron procesadores con esa búsqueda.
+    </p>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-contenido">
+        <h2>Kantubyte</h2>
+        <p>Tecnología que conecta posibilidades.</p>
+
+        <div class="footer-enlaces">
+            <a href="contacto.html">Contactos</a>
+            <a href="sobre-nosotros.html">Acerca de</a>
+            <a href="catalogo.html">Catálogo</a>
+        </div>
+
+        <p class="copyright">
+            © 2026 Kantubyte. Todos los derechos reservados.
+        </p>
+    </div>
+</footer>
+
+<script src="procesadores.js"></script>
+</body>
+</html>

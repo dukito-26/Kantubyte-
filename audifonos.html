@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audífonos | Kantubyte</title>
+    <link rel="stylesheet" href="audifonos.css">
+</head>
+<body>
+
+<header class="encabezado">
+    <div class="marca">
+        <img src="imagenes/logo-kantubyte-transparente.jpg" alt="Kantubyte">
+        <h1>KANTUBYTE</h1>
+    </div>
+
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="exteriores.html">Exteriores</a>
+        <a href="carrito.html">Carrito</a>
+    </nav>
+</header>
+
+<section class="portada">
+    <span class="etiqueta">KANTUBYTE • EXTERIORES</span>
+    <h2>Audífonos</h2>
+    <p>Encuentra tu sonido ideal: gaming, música, estudio y mucho más.</p>
+</section>
+
+<main class="contenido">
+
+    <section class="filtros">
+        <input type="text" id="buscador"
+            placeholder="Buscar audífonos o marca...">
+
+        <select id="filtroNivel">
+            <option value="todos">Todos los niveles</option>
+            <option value="Básica">Básica</option>
+            <option value="Media">Media</option>
+            <option value="Alta">Alta</option>
+            <option value="Premium">Premium</option>
+        </select>
+    </section>
+
+    <p id="contador-productos"></p>
+
+    <section class="contenedor-productos">
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=700" alt="Audífonos de diadema">
+            <div class="datos">
+                <span class="marca-producto">Redragon</span>
+                <h3>Redragon Hylas H260</h3>
+                <p>Audífonos gamer con micrófono y conexión por cable.</p>
+                <span class="nivel">Básica</span>
+                <p class="precio">Bs 180</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=700" alt="Audífonos inalámbricos compactos">
+            <div class="datos">
+                <span class="marca-producto">Logitech</span>
+                <h3>Logitech G435</h3>
+                <p>Audífonos inalámbricos ligeros con micrófonos integrados.</p>
+                <span class="nivel">Media</span>
+                <p class="precio">Bs 520</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b?w=700" alt="Audífonos negros de diadema">
+            <div class="datos">
+                <span class="marca-producto">HyperX</span>
+                <h3>HyperX Cloud III</h3>
+                <p>Audífonos gaming con almohadillas cómodas y sonido envolvente.</p>
+                <span class="nivel">Alta</span>
+                <p class="precio">Bs 650</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?w=700" alt="Audífonos de estudio">
+            <div class="datos">
+                <span class="marca-producto">Razer</span>
+                <h3>Razer BlackShark V2 X</h3>
+                <p>Diseño ligero, micrófono integrado y sonido para gaming.</p>
+                <span class="nivel">Media</span>
+                <p class="precio">Bs 390</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?w=700" alt="Audífonos modernos">
+            <div class="datos">
+                <span class="marca-producto">Corsair</span>
+                <h3>Corsair HS55 Stereo</h3>
+                <p>Audífonos con micrófono abatible y diseño cómodo.</p>
+                <span class="nivel">Media</span>
+                <p class="precio">Bs 420</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1487215078519-e21cc028cb29?w=700" alt="Audífonos inalámbricos">
+            <div class="datos">
+                <span class="marca-producto">SteelSeries</span>
+                <h3>Arctis Nova 7</h3>
+                <p>Audífonos inalámbricos con conexión Bluetooth y 2.4 GHz.</p>
+                <span class="nivel">Premium</span>
+                <p class="precio">Bs 1.450</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=700" alt="Audífonos de música">
+            <div class="datos">
+                <span class="marca-producto">JBL</span>
+                <h3>JBL Tune 720BT</h3>
+                <p>Audífonos Bluetooth con batería de larga duración.</p>
+                <span class="nivel">Media</span>
+                <p class="precio">Bs 480</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1599669454699-248893623440?w=700" alt="Audífonos inalámbricos de diadema">
+            <div class="datos">
+                <span class="marca-producto">Sony</span>
+                <h3>Sony WH-CH720N</h3>
+                <p>Audífonos inalámbricos con cancelación de ruido.</p>
+                <span class="nivel">Alta</span>
+                <p class="precio">Bs 1.050</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1599669454699-248893623440?w=700" alt="Audífonos premium">
+            <div class="datos">
+                <span class="marca-producto">Sony</span>
+                <h3>Sony WH-1000XM5</h3>
+                <p>Audífonos premium con cancelación avanzada de ruido.</p>
+                <span class="nivel">Premium</span>
+                <p class="precio">Bs 2.450</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=700" alt="Audífonos de alta calidad">
+            <div class="datos">
+                <span class="marca-producto">Bose</span>
+                <h3>QuietComfort 45</h3>
+                <p>Audífonos inalámbricos con cancelación de ruido y comodidad.</p>
+                <span class="nivel">Premium</span>
+                <p class="precio">Bs 2.300</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1545127398-14699f92334b?w=700" alt="Audífonos profesionales">
+            <div class="datos">
+                <span class="marca-producto">Audio-Technica</span>
+                <h3>ATH-M20x</h3>
+                <p>Audífonos profesionales de monitorización para estudio.</p>
+                <span class="nivel">Alta</span>
+                <p class="precio">Bs 650</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1524678606370-a47ad25cb82a?w=700" alt="Audífonos de sonido">
+            <div class="datos">
+                <span class="marca-producto">Sennheiser</span>
+                <h3>HD 560S</h3>
+                <p>Audífonos abiertos para escucha detallada y estudio.</p>
+                <span class="nivel">Premium</span>
+                <p class="precio">Bs 1.650</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1505740106531-4243f3831c78?w=700" alt="Audífonos gaming">
+            <div class="datos">
+                <span class="marca-producto">Logitech G</span>
+                <h3>PRO X 2 Lightspeed</h3>
+                <p>Audífonos gaming inalámbricos con micrófono desmontable.</p>
+                <span class="nivel">Premium</span>
+                <p class="precio">Bs 2.100</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1606220945770-b5b6c2c55bf1?w=700" alt="Audífonos compactos">
+            <div class="datos">
+                <span class="marca-producto">Razer</span>
+                <h3>Barracuda X</h3>
+                <p>Audífonos inalámbricos multiplataforma y micrófono desmontable.</p>
+                <span class="nivel">Alta</span>
+                <p class="precio">Bs 780</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://images.unsplash.com/photo-1600294037681-c80b4cb5b434?w=700" alt="Auriculares compactos inalámbricos">
+            <div class="datos">
+                <span class="marca-producto">JBL</span>
+                <h3>JBL Wave Buds</h3>
+                <p>Auriculares compactos Bluetooth para música y uso diario.</p>
+                <span class="nivel">Básica</span>
+                <p class="precio">Bs 320</p>
+                <button class="agregar-carrito">Añadir al carrito</button>
+            </div>
+        </article>
+
+    </section>
+</main>
+
+<footer>
+    <h3>KANTUBYTE 🌺</h3>
+    <p>Tecnología que conecta posibilidades.</p>
+    <p>© 2026 Kantubyte - Proyecto académico</p>
+</footer>
+
+<script src="audifonos.js"></script>
+</body>
+</html>

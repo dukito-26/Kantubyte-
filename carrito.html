@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mi carrito | Kantubyte</title>
+
+    <link rel="stylesheet" href="carrito.css">
+</head>
+
+<body>
+
+<header class="encabezado">
+    <div class="marca">
+        <img src="imagenes/logo-kantubyte-transparente.jpg"
+             alt="Logo Kantubyte">
+        <h1>KANTUBYTE</h1>
+    </div>
+
+    <nav class="navegacion">
+        <a href="inicio.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="interior.html">Interiores</a>
+        <a href="carrito.html" class="activo">Carrito</a>
+    </nav>
+</header>
+
+<section class="portada">
+    <p class="etiqueta-portada">KANTUBYTE · TU PEDIDO</p>
+    <h2>Mi carrito</h2>
+    <p>Revisa tus productos antes de realizar la reservación.</p>
+</section>
+
+<main class="contenido-carrito">
+
+    <!-- PRODUCTOS -->
+    <section class="panel productos-panel">
+        <div class="titulo-panel">
+            <h3>Productos seleccionados</h3>
+            <span id="cantidad-articulos">0 artículos</span>
+        </div>
+
+        <div id="lista-carrito"></div>
+
+        <div id="carrito-vacio" class="carrito-vacio">
+            <h3>Tu carrito está vacío</h3>
+            <p>Explora Kantubyte y añade productos a tu pedido.</p>
+            <a href="catalogo.html" class="boton-volver">
+                Ir al catálogo
+            </a>
+        </div>
+    </section>
+
+    <!-- RESUMEN -->
+    <aside class="panel resumen-panel">
+        <h3>Resumen del pedido</h3>
+
+        <div class="fila-resumen">
+            <span>Subtotal</span>
+            <strong id="subtotal">Bs. 0</strong>
+        </div>
+
+        <div class="fila-resumen">
+            <span>Entrega</span>
+            <strong id="costo-entrega">Por coordinar</strong>
+        </div>
+
+        <div class="fila-resumen total">
+            <span>Total</span>
+            <strong id="total">Bs. 0</strong>
+        </div>
+
+        <p class="nota-resumen">
+            El costo de envío se coordinará por WhatsApp.
+        </p>
+    </aside>
+
+    <!-- DATOS DEL CLIENTE -->
+    <section class="panel formulario-panel">
+
+        <h3>Datos del cliente</h3>
+
+        <form id="form-pedido">
+
+            <div class="campo">
+                <label for="nombre">Nombre completo</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre completo"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input
+                    type="email"
+                    id="correo"
+                    name="correo"
+                    placeholder="ejemplo@correo.com"
+                    required
+                >
+            </div>
+
+            <!-- ENTREGA -->
+            <h3 class="subtitulo">Modalidad de entrega</h3>
+
+            <label class="opcion">
+                <input
+                    type="radio"
+                    name="entrega"
+                    value="recepcion"
+                    checked
+                >
+                <span>
+                    <strong>Recepción en Kantubyte</strong>
+                    <small>Recoger personalmente el pedido.</small>
+                </span>
+            </label>
+
+            <label class="opcion">
+                <input
+                    type="radio"
+                    name="entrega"
+                    value="domicilio"
+                >
+                <span>
+                    <strong>Envío a domicilio</strong>
+                    <small>Coordinar entrega y ubicación.</small>
+                </span>
+            </label>
+
+            <div id="datos-domicilio" class="datos-domicilio oculto">
+
+                <div class="campo">
+                    <label for="direccion">Dirección o zona</label>
+                    <input
+                        type="text"
+                        id="direccion"
+                        placeholder="Zona, calle y número"
+                    >
+                </div>
+
+                <div class="campo">
+                    <label for="referencia">Referencia</label>
+                    <textarea
+                        id="referencia"
+                        rows="3"
+                        placeholder="Alguna referencia para encontrar el lugar"
+                    ></textarea>
+                </div>
+
+                <div class="campo">
+                    <label for="maps">Ubicación de Google Maps</label>
+                    <input
+                        type="url"
+                        id="maps"
+                        placeholder="Pega aquí tu enlace de ubicación"
+                    >
+                </div>
+            </div>
+
+            <!-- PAGO -->
+            <h3 class="subtitulo">Método de pago</h3>
+
+            <label class="opcion">
+                <input
+                    type="radio"
+                    name="pago"
+                    value="yape"
+                    checked
+                >
+                <span>
+                    <strong>Yape</strong>
+                    <small>Reservación mediante Yape.</small>
+                </span>
+            </label>
+
+            <label class="opcion">
+                <input
+                    type="radio"
+                    name="pago"
+                    value="tarjeta"
+                >
+                <span>
+                    <strong>Tarjeta</strong>
+                    <small>Opción demostrativa del prototipo.</small>
+                </span>
+            </label>
+
+            <div id="informacion-pago" class="informacion-pago">
+                <p id="texto-pago">
+                    La información de pago se coordinará por WhatsApp.
+                </p>
+            </div>
+
+            <button
+                type="submit"
+                id="confirmar-pedido"
+                class="boton-confirmar"
+            >
+                Confirmar pedido por WhatsApp
+            </button>
+
+            <p class="aviso">
+                Este botón prepara tu pedido y abre WhatsApp.
+                La reservación se confirma al coordinar con la tienda.
+            </p>
+
+        </form>
+    </section>
+
+</main>
+
+<footer class="pie-pagina">
+    <h3>KANTUBYTE</h3>
+    <p>Tecnología que conecta posibilidades.</p>
+    <p>© 2026 Kantubyte</p>
+</footer>
+
+<script src="carrito.js?v=3"></script>
+
+</body>
+</html>

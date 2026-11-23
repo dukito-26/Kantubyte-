@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouses | Kantubyte</title>
+    <link rel="stylesheet" href="mouse.css">
+</head>
+<body>
+
+<header class="encabezado">
+    <div class="marca">
+        <img src="imagenes/logo-kantubyte-transparente.jpg" alt="Kantubyte">
+        <h1>KANTUBYTE</h1>
+    </div>
+
+    <nav>
+        <a href="inicio.html">Inicio</a>
+        <a href="catalogo.html">Catálogo</a>
+        <a href="carrito.html">Carrito</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      <a href="exteriores.html">Exteriores</a>
+    </nav>
+</header>
+
+<section class="portada">
+    <h2>Mouses</h2>
+    <p>Precisión, comodidad y rendimiento para cada movimiento.</p>
+</section>
+
+<section class="productos">
+
+    <h2 class="titulo-seccion">Catálogo de mouses</h2>
+
+    <div class="filtros">
+        <input type="search" id="buscador"
+        placeholder="Buscar por nombre o marca...">
+
+        <select id="filtroNivel">
+            <option value="todos">Todos los niveles</option>
+            <option value="Básica">Básica</option>
+            <option value="Media">Media</option>
+            <option value="Alta">Alta</option>
+            <option value="Premium">Premium</option>
+        </select>
+    </div>
+
+    <p id="contador-productos"></p>
+
+    <div class="contenedor-productos">
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Redragon%20M607%20Griffin.png" alt="Logitech G203 Lightsync">
+            <div class="datos">
+                <h3>Logitech G203 Lightsync</h3>
+                <p>Marca: Logitech</p>
+                <p>Mouse gaming con iluminación RGB y sensor óptico.</p>
+                <p class="precio">Bs 180</p>
+                <span class="nivel">Básica</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Redragon%20M607%20Griffin.png" alt="Redragon M607 Griffin">
+            <div class="datos">
+                <h3>Redragon M607 Griffin</h3>
+                <p>Marca: Redragon</p>
+                <p>Mouse con botones programables y diseño ergonómico.</p>
+                <p class="precio">Bs 160</p>
+                <span class="nivel">Básica</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/HyperX%20Pulsefire%20Core.png" alt="HyperX Pulsefire Core">
+            <div class="datos">
+                <h3>HyperX Pulsefire Core</h3>
+                <p>Marca: HyperX</p>
+                <p>Mouse óptico con iluminación RGB personalizable.</p>
+                <p class="precio">Bs 210</p>
+                <span class="nivel">Básica</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Sharkoon%20Shark%20Force.png" alt="Sharkoon Shark Force">
+            <div class="datos">
+                <h3>Sharkoon Shark Force</h3>
+                <p>Marca: Sharkoon</p>
+                <p>Mouse ergonómico para uso diario.</p>
+                <p class="precio">Bs 120</p>
+                <span class="nivel">Básica</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Logitech%20G102%20Prodigy.png" alt="Logitech G102 Prodigy">
+            <div class="datos">
+                <h3>Logitech G102 Prodigy</h3>
+                <p>Marca: Logitech</p>
+                <p>Mouse gaming con sensor preciso y diseño compacto.</p>
+                <p class="precio">Bs 170</p>
+                <span class="nivel">Básica</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Razer%20DeathAdder%20Essential.png" alt="Razer DeathAdder Essential">
+            <div class="datos">
+                <h3>Razer DeathAdder Essential</h3>
+                <p>Marca: Razer</p>
+                <p>Mouse ergonómico con cinco botones programables.</p>
+                <p class="precio">Bs 230</p>
+                <span class="nivel">Media</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Corsair%20Harpoon.png" alt="Corsair Harpoon">
+            <div class="datos">
+                <h3>Corsair Harpoon RGB</h3>
+                <p>Marca: Corsair</p>
+                <p>Mouse gaming ligero con iluminación RGB.</p>
+                <p class="precio">Bs 250</p>
+                <span class="nivel">Media</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/SteelSeries%20Rival%203.png" alt="SteelSeries Rival 3">
+            <div class="datos">
+                <h3>SteelSeries Rival 3</h3>
+                <p>Marca: SteelSeries</p>
+                <p>Mouse óptico con iluminación y estructura resistente.</p>
+                <p class="precio">Bs 280</p>
+                <span class="nivel">Media</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Cooler%20Master%20MM710.png" alt="Cooler Master MM710">
+            <div class="datos">
+                <h3>Cooler Master MM710</h3>
+                <p>Marca: Cooler Master</p>
+                <p>Mouse ultraligero con carcasa perforada.</p>
+                <p class="precio">Bs 320</p>
+                <span class="nivel">Media</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Logitech%20G304%20LIGHTSPEED.png" alt="Logitech G304 Lightspeed">
+            <div class="datos">
+                <h3>Logitech G304 Lightspeed</h3>
+                <p>Marca: Logitech</p>
+                <p>Mouse inalámbrico con tecnología Lightspeed.</p>
+                <p class="precio">Bs 350</p>
+                <span class="nivel">Media</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/ASUS%20ROG%20Gladius%20III.png" alt="ASUS ROG Gladius III">
+            <div class="datos">
+                <h3>ASUS ROG Gladius III</h3>
+                <p>Marca: ASUS</p>
+                <p>Mouse gaming con sensor de alta precisión.</p>
+                <p class="precio">Bs 490</p>
+                <span class="nivel">Alta</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Glorious%20PC%20Gaming%20Race%20Model%20O%20Black.png" alt="Glorious Model O">
+            <div class="datos">
+                <h3>Glorious Model O</h3>
+                <p>Marca: Glorious</p>
+                <p>Mouse ultraligero con diseño tipo panal.</p>
+                <p class="precio">Bs 520</p>
+                <span class="nivel">Alta</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Razer%20Basilisk%20V3%20Pro.png" alt="Razer Basilisk V3 Pro">
+            <div class="datos">
+                <h3>Razer Basilisk V3 Pro</h3>
+                <p>Marca: Razer</p>
+                <p>Mouse inalámbrico con controles personalizables.</p>
+                <p class="precio">Bs 850</p>
+                <span class="nivel">Premium</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Logitech%20G502%20HERO.png" alt="Logitech G502 Hero">
+            <div class="datos">
+                <h3>Logitech G502 HERO</h3>
+                <p>Marca: Logitech</p>
+                <p>Mouse gaming con pesos ajustables y múltiples botones.</p>
+                <p class="precio">Bs 450</p>
+                <span class="nivel">Alta</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/HyperX%20Pulsefire%20Haste.png" alt="HyperX Pulsefire Haste">
+            <div class="datos">
+                <h3>HyperX Pulsefire Haste</h3>
+                <p>Marca: HyperX</p>
+                <p>Mouse ligero diseñado para movimientos rápidos.</p>
+                <p class="precio">Bs 390</p>
+                <span class="nivel">Alta</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Roccat%20Burst%20PRO.png" alt="Roccat Burst Pro">
+            <div class="datos">
+                <h3>Roccat Burst Pro</h3>
+                <p>Marca: Roccat</p>
+                <p>Mouse óptico con diseño ergonómico y RGB.</p>
+                <p class="precio">Bs 410</p>
+                <span class="nivel">Alta</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Corsair%20Dark%20Core%20PRO.png" alt="Corsair Dark Core Pro">
+            <div class="datos">
+                <h3>Corsair Dark Core PRO</h3>
+                <p>Marca: Corsair</p>
+                <p>Mouse inalámbrico con agarre ergonómico.</p>
+                <p class="precio">Bs 650</p>
+                <span class="nivel">Premium</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/SteelSeries%20Aerox%203%20Wireless.png" alt="SteelSeries Aerox 3 Wireless">
+            <div class="datos">
+                <h3>SteelSeries Aerox 3 Wireless</h3>
+                <p>Marca: SteelSeries</p>
+                <p>Mouse inalámbrico ultraligero y resistente al agua.</p>
+                <p class="precio">Bs 690</p>
+                <span class="nivel">Premium</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Logitech%20G%20Pro%20X%20Superlight%202%20Black.png" alt="Logitech G Pro X Superlight 2">
+            <div class="datos">
+                <h3>Logitech G Pro X Superlight 2</h3>
+                <p>Marca: Logitech</p>
+                <p>Mouse inalámbrico profesional de peso reducido.</p>
+                <p class="precio">Bs 1.050</p>
+                <span class="nivel">Premium</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Razer%20Viper%20Mini%20Signature%20Edition.png" alt="Razer Viper Mini Signature Edition">
+            <div class="datos">
+                <h3>Razer Viper Mini Signature Edition</h3>
+                <p>Marca: Razer</p>
+                <p>Mouse inalámbrico ultraligero de edición especial.</p>
+                <p class="precio">Bs 2.100</p>
+                <span class="nivel">Premium</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Logitech%20MX%20Master%204.png" alt="Logitech MX Master 4">
+            <div class="datos">
+                <h3>Logitech MX Master 4</h3>
+                <p>Marca: Logitech</p>
+                <p>Mouse inalámbrico avanzado para productividad.</p>
+                <p class="precio">Bs 1.100</p>
+                <span class="nivel">Premium</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Attack%20Shark%20X3.png" alt="Attack Shark X3">
+            <div class="datos">
+                <h3>Attack Shark X3</h3>
+                <p>Marca: Attack Shark</p>
+                <p>Mouse inalámbrico ligero con sensor de precisión.</p>
+                <p class="precio">Bs 300</p>
+                <span class="nivel">Media</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Ajazz%20AJ159.png" alt="Ajazz AJ159">
+            <div class="datos">
+                <h3>Ajazz AJ159</h3>
+                <p>Marca: Ajazz</p>
+                <p>Mouse inalámbrico con diseño compacto.</p>
+                <p class="precio">Bs 370</p>
+                <span class="nivel">Alta</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Pulsar%20Xlite%20Wireless%20Black.png" alt="Pulsar Xlite Wireless">
+            <div class="datos">
+                <h3>Pulsar Xlite Wireless</h3>
+                <p>Marca: Pulsar</p>
+                <p>Mouse inalámbrico ergonómico para gaming.</p>
+                <p class="precio">Bs 620</p>
+                <span class="nivel">Premium</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/MSI%20VERSA%20PRO%20Wireless.png" alt="MSI Versa Pro Wireless">
+            <div class="datos">
+                <h3>MSI Versa Pro Wireless</h3>
+                <p>Marca: MSI</p>
+                <p>Mouse inalámbrico con diseño gaming moderno.</p>
+                <p class="precio">Bs 580</p>
+                <span class="nivel">Alta</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+        <article class="producto">
+            <img src="https://specs.gg/assets/img/gear/mouse/Endgame%20Gear%20OP1%208K.png" alt="Endgame Gear OP1 8K">
+            <div class="datos">
+                <h3>Endgame Gear OP1 8K</h3>
+                <p>Marca: Endgame Gear</p>
+                <p>Mouse gaming de alto rendimiento y precisión.</p>
+                <p class="precio">Bs 720</p>
+                <span class="nivel">Premium</span>
+                <p>Disponibilidad: Disponible</p>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<footer>
+    <p>Kantubyte 🌺 | Tecnología que conecta posibilidades.</p>
+    <p>© 2026 Kantubyte. Todos los derechos reservados.</p>
+</footer>
+
+<script src="mouse.js"></script>
+</body>
+</html>
